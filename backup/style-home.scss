@@ -1,0 +1,19 @@
+@import '_mixins';
+@import '_variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center; 
+}
+
+/*Header starts*/
+@import '_header-mobile';
+/*Header ends*/
