@@ -1,0 +1,361 @@
+@import '_mixins';
+@import '_variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center; 
+}
+
+/*Header starts*/
+@import '_header-mobile';
+/*Header ends*/
+
+/*Content starts*/
+#content {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-row-gap: 3vh;
+    justify-items: center;
+    align-items: center;
+}
+
+#main-title {
+    width: 100%;
+    min-height: 70vh;
+    background: url(../images/about-backgroundimage-pizza.jpg);
+    background-size: cover;
+    background-position: top;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: top;
+    position: relative;
+
+    h1 {
+        @include h-font(2.5rem);
+        color: $color-1;
+        font-weight: bold;
+        text-align: left;
+        line-height: 8vh;
+        width: 50%;
+        position: absolute;
+        left: 15%;
+        bottom: 50%;
+    }
+
+    P {
+        @include p-font(1.5rem);
+        color: $color-1;
+        font-weight: normal;
+        line-height: 5vh;
+        position: absolute;
+        left: 15%;
+        bottom: 25%;
+        text-align: left;
+        width: 70%;
+    }
+
+    a {
+        @include a-font(1rem, $color-1);
+        width: 40vw;
+        border: 0.1em solid $color-1;
+        text-align: center;
+        position: absolute;
+        left: 15%;
+        bottom: 15%;
+
+        &:link, &:visited {
+            color: $color-1;
+            background-color: $color-3;
+            padding: 0.3em;
+        }
+    
+        &:hover, &:active {
+            width: 70vw;
+            color: $color-3;
+            background-color: $color-1;
+            padding: 0.4em;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+/*Top-content starts*/
+#top-content {
+    width: 90%;
+    min-height: 80vh;
+    display: grid;
+    row-gap: 2vh;
+    align-items: center;
+    justify-items: center;
+    border: 2px solid $color-3;
+    box-shadow: 0px 1px 1px $color-3;
+
+    img {
+        display: block;
+        width: 90%;
+        height: 40vh;
+        object-fit: cover;
+        margin-top: 3vh;
+    }
+}
+
+#top-text {
+    width: 90%;
+    line-height: 4vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    h2 {
+        @include h-font(1.5rem);
+        font-weight: bold;
+        color: $color-3;
+        text-align: center;
+        margin-bottom: 1em;
+        padding-bottom: 0.3em;
+        box-shadow: 0px 1px 1px $color-3;
+        width: 90%;
+    }
+
+    p {
+        @include p-font(1rem);
+        color: $color-3;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 2vh;
+    }
+}
+/*Top-content ends*/
+
+/*Sub-content starts*/
+#sub-content {
+    width: 90%;
+    min-height: 60vh;
+    display: grid;
+    row-gap: 2vh;
+    align-items: center;
+    justify-items: center;
+    border: 2px solid $color-3;
+    box-shadow: 0px 1px 1px $color-3;
+
+    img {
+        display: block;
+        width: 80%;
+        height: 40vh;
+        object-fit: cover;
+        margin-top: 3vh;
+    }
+
+    #sub-text {
+        width: 80%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    
+        h2 {
+            @include h-font(1.5rem);
+            font-weight: bold;
+            color: $color-3;
+            text-align: center;
+            margin-bottom: 1em;
+            padding-bottom: 0.3em;
+            box-shadow: 0px 1px 1px $color-3;
+            width: 90%;
+        }
+        
+        p {
+            @include p-font(1rem);
+            color: $color-3;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 2vh;
+        }
+
+        .chef-name {
+            @include p-font(1rem);
+            color: $color-3;
+            text-align: center;
+            width: 100%;
+            font-weight: bold;
+            margin-bottom: 2vh;
+        }
+    }
+}
+/*Sub-content ends*/
+
+/*Order-info starts*/
+#order-info {
+    width: 80%;
+    min-height: 40vh;
+    display: grid;
+    row-gap: 2vh;
+    align-items: center;
+    justify-items: center;
+
+    div {
+        a {
+            @include a-font(1.5rem, $color-1);  
+            width: 50vw;
+            margin: 0.3em 2em 0em 2em;
+            padding: 0.4em;
+            box-shadow: 1px 1px 2px $color-5;
+
+            &:link, &:visited {
+                color: $color-2;
+                border: 2px solid $color-3;  
+            }
+                
+            &:hover, &:active {
+                color: $color-5;
+                border: 2px solid $color-3; 
+            }
+        }
+    }
+}   
+
+/*Order-info ends*/
+
+/*Bottom-content starts*/
+#bottom-content {
+    width: 90%;
+    min-height: 100vh;
+    display: grid;
+    row-gap: 2.5vh;
+    justify-content: center;
+    align-content: center;
+
+    .bottom-image {
+        display: block;
+        
+        img {
+            width: 100%;
+            height: 45vh;
+            object-fit: cover;
+        }
+    }
+
+    .bottom-text {
+        width: 100%;
+        height: 45vh;
+        display: grid;
+        row-gap: 0.5vh;
+        justify-items: center;
+        align-items: center;
+        background-color: $color-3;
+        padding: 1.5em 1em 1.5em 1em;
+
+        i {
+            height: 10vh;
+        }
+        
+        div {
+            height: 35vh;
+        
+            h2{
+                @include h-font(1.5rem);
+                font-weight: bold;
+                color: $color-1;
+                margin: 0.6em;
+            }
+
+            p {
+                @include p-font(1rem);
+                color: $color-1;
+                margin: 0.6em;
+            }
+        }
+    }
+}
+
+#bottom-nav {
+    width: 100%;
+    min-height: 45vh;
+    display: grid;
+    row-gap: 2vh;
+    justify-items: center;
+    align-items: center;
+    background-color: $color-4;
+}
+
+#contact-info {
+    width: 60%;
+    display: grid;
+    row-gap: 1vh;
+    justify-items: center;
+    align-items: center;
+
+    a {
+        width: 100%;
+        display: block;
+        @include a-font(1rem, $color-1);  
+        margin: 0.3em 2em 0em 2em;
+        padding: 0.4em;
+        color: $color-1;
+    
+        &:link, &:visited {
+            color: $color-1;
+            border: 2px solid $color-2; 
+        }
+                    
+        &:hover, &:active {
+            color: $color-5;
+            border: 2px solid $color-3; 
+        }
+    }
+}
+
+#nav-bar {
+    width: 60%;
+    display: grid;
+    row-gap: 1vh;
+    justify-items: center;
+    align-items: center;
+
+    a {
+        @include a-font(1rem, $color-1);
+        width: 100%;
+        padding: 0.2em;
+        margin: 0.3em 2em 0em 2em;
+
+        &:link, &:visited {
+            background-color: $color-2;
+        }
+
+        &:hover {
+            background-color: $color-3;  
+        }
+
+        &:active {
+            background-color: $color-1;
+        }
+
+        &.currentLink {
+            background-color: $color-5;
+        }
+    }
+}
+/*Content ends*/
+
+/*Footer starts*/
+#footer {
+    @include p-font(1rem);
+    background-color: $color-5;
+    width: 100%;
+    min-height: 8vh;
+    color: $color-1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} 
+/*Footer ends*/
