@@ -1,0 +1,229 @@
+.menu-content {
+    width: 100%;
+    min-height: 70vh;
+    display: grid;
+    row-gap: 1vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.menu-items {
+    width: 100%;
+    min-height: 40vh;
+    display: grid;
+    row-gap: 1vh;
+    justify-items: center;
+    align-items: center;
+
+    h1 {
+        @include h-font(1.5rem);
+        width: 100%;
+        height: 10vh;
+        background-color: $color-5;
+        color: $color-1;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .item-container-1 {
+        width: 90%;
+        min-height: 40vh;
+        display: grid;
+        row-gap: 1vh;
+        justify-items: center;
+        align-items: center;
+        border: 2px solid $color-6;
+    
+        .item-content {
+            width: 90%;
+
+            img {
+                width: 100%;
+                height: 30vh;
+                object-fit: cover;
+                margin-top: 2vh;
+            }
+            
+            h2 {
+                @include h-font(1.5rem);
+                color: $color-6;
+                padding: 0.4em;
+                border-bottom: 1px solid $color-6;
+            }
+
+            p {
+                @include p-font(1rem);
+                width: 100%;
+                padding: 10px;
+                color: $color-6;
+                border-bottom: 1px solid $color-6;
+            }
+        }
+
+        .item-text {
+            width: 100%;
+            margin: 0.6em 0.6em 0.6em 1em;
+
+            h3 {
+                @include h-font(1.2rem);
+                color: $color-6;
+            }
+
+            p {
+                @include p-font(1.2rem);
+                margin-top: 0.3em;
+            }
+        }
+    }
+
+    .item-container-2 {
+        width: 90%;
+        min-height: 30vh;
+        display: grid;
+        row-gap: 1vh;
+        justify-items: center;
+        align-items: center;
+        border: 2px solid $color-6;
+
+        h2 {
+            @include h-font(1.5rem);
+            color: $color-5;
+            margin: 0.4em;
+            width: 90%;
+        }
+
+        p {
+            @include p-font(1rem);
+            margin-top: 0.3em;
+            width: 100%;
+        }
+
+        .extra-selection {
+            width: 50%;
+            min-height: 20vh;
+            display: grid;
+            row-gap: 1vh;
+            margin: 1em;
+
+            a {
+                @include a-font(1rem, $color-1);
+                width: 100%;
+                padding: 0.4em;
+                border: 1px solid $color-6;
+                
+                &:link, &:visited {
+                    color: $color-6;
+                }
+                
+                &:hover, &:active {
+                    color: $color-1;
+                    background-color: $color-3;  
+                }
+            }
+        }
+    }
+}
+
+.menu-content-2 {
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    row-gap: 1vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.menu-items-2 {
+    width: 100%;
+    min-height: 40vh;
+    display: grid;
+    row-gap: 1vh;
+    justify-items: center;
+    align-items: center;
+
+    h1 {
+        @include h-font(1.5rem);
+        width: 100%;
+        height: 10vh;
+        background-color: $color-5;
+        color: $color-1;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .item-container-3 {
+        width: 90%;
+        min-height: 60vh;
+        display: grid;
+        row-gap: 1vh;
+        justify-items: center;
+        align-items: center;
+        border: 2px solid $color-6;
+    
+        .combo-content {
+            width: 90%;
+            row-gap: 1vh;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 30vh;
+                object-fit: cover;
+                margin-top: 2vh;
+            }
+
+            .sides {
+                width: 100%;
+                height: 15vh;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 1vw;
+                row-gap: 1vh;
+                justify-items: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    height: 15vh;
+                    object-fit: cover;
+                    margin-top: 2vh;
+                }
+            }
+            
+            h2 {
+                @include h-font(1.5rem);
+                color: $color-6;
+                padding: 0.4em;
+                margin-top: 0.8em;
+                border-bottom: 1px solid $color-6;
+            }
+
+            p {
+                @include p-font(1rem);
+                width: 100%;
+                padding: 10px;
+                color: $color-6;
+                border-bottom: 1px solid $color-6;
+            }
+        }
+
+        .item-text {
+            width: 100%;
+            margin: 0.6em 0.6em 0.6em 1em;
+
+            h3 {
+                @include h-font(1.2rem);
+                color: $color-6;
+            }
+
+            p {
+                @include p-font(1.2rem);
+                margin-top: 0.3em;
+            }
+        }
+    }
+}

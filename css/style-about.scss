@@ -98,8 +98,7 @@ body {
     row-gap: 2vh;
     align-items: center;
     justify-items: center;
-    border: 2px solid $color-3;
-    box-shadow: 0px 1px 1px $color-3;
+    border: 1px solid $color-6;
 
     img {
         display: block;
@@ -120,17 +119,17 @@ body {
     h2 {
         @include h-font(1.5rem);
         font-weight: bold;
-        color: $color-3;
+        color: $color-6;
         text-align: center;
         margin-bottom: 1em;
         padding-bottom: 0.3em;
-        box-shadow: 0px 1px 1px $color-3;
+        box-shadow: 0px 1px 1px $color-6;
         width: 90%;
     }
 
     p {
         @include p-font(1rem);
-        color: $color-3;
+        color: $color-6;
         text-align: center;
         width: 90%;
         margin-bottom: 2vh;
@@ -146,8 +145,7 @@ body {
     row-gap: 2vh;
     align-items: center;
     justify-items: center;
-    border: 2px solid $color-3;
-    box-shadow: 0px 1px 1px $color-3;
+    border: 1px solid $color-6;
 
     img {
         display: block;
@@ -166,17 +164,17 @@ body {
         h2 {
             @include h-font(1.5rem);
             font-weight: bold;
-            color: $color-3;
+            color: $color-6;
             text-align: center;
             margin-bottom: 1em;
             padding-bottom: 0.3em;
-            box-shadow: 0px 1px 1px $color-3;
+            box-shadow: 0px 1px 1px $color-6;
             width: 90%;
         }
         
         p {
             @include p-font(1rem);
-            color: $color-3;
+            color: $color-6;
             text-align: center;
             width: 100%;
             margin-bottom: 2vh;
@@ -184,7 +182,7 @@ body {
 
         .chef-name {
             @include p-font(1rem);
-            color: $color-3;
+            color: $color-6;
             text-align: center;
             width: 100%;
             font-weight: bold;
@@ -213,12 +211,12 @@ body {
 
             &:link, &:visited {
                 color: $color-2;
-                border: 2px solid $color-3;  
+                border: 2px solid $color-5;  
             }
                 
             &:hover, &:active {
                 color: $color-5;
-                border: 2px solid $color-3; 
+                border: 2px solid $color-5; 
             }
         }
     }
@@ -231,7 +229,7 @@ body {
     width: 90%;
     min-height: 100vh;
     display: grid;
-    row-gap: 2.5vh;
+    row-gap: 2vh;
     justify-content: center;
     align-content: center;
 
@@ -247,33 +245,31 @@ body {
 
     .bottom-text {
         width: 100%;
-        height: 45vh;
         display: grid;
-        row-gap: 0.5vh;
+        row-gap: 1vh;
         justify-items: center;
         align-items: center;
-        background-color: $color-3;
-        padding: 1.5em 1em 1.5em 1em;
+        border-top: 1px solid $color-6;
+        border-bottom: 1px solid $color-6;
+        padding: 1em;
 
         i {
-            height: 10vh;
+            height: 5vh;
         }
-        
-        div {
-            height: 35vh;
-        
-            h2{
-                @include h-font(1.5rem);
-                font-weight: bold;
-                color: $color-1;
-                margin: 0.6em;
-            }
 
-            p {
-                @include p-font(1rem);
-                color: $color-1;
-                margin: 0.6em;
-            }
+        h2{
+            height: 5vh;
+            @include h-font(1.5rem);
+            font-weight: bold;
+            color: $color-6;
+            height: 5vh;
+        }
+
+        p {
+            min-height: 5vh;
+            width: 90%;
+            @include p-font(1rem);
+            color: $color-6;
         }
     }
 }
@@ -285,12 +281,12 @@ body {
     row-gap: 2vh;
     justify-items: center;
     align-items: center;
-    background-color: $color-4;
-}
-
+    background-c
 #contact-info {
     width: 60%;
-    display: grid;
+    display: olor: $color-4;
+}
+grid;
     row-gap: 1vh;
     justify-items: center;
     align-items: center;
@@ -305,12 +301,14 @@ body {
     
         &:link, &:visited {
             color: $color-1;
-            border: 2px solid $color-2; 
+            border: 2px solid $color-2;
+            box-shadow: 1px 1px 1px $color-6; 
         }
                     
         &:hover, &:active {
             color: $color-5;
-            border: 2px solid $color-3; 
+            border: 2px solid $color-3;
+            box-shadow: 1px 1px 1px $color-6; 
         }
     }
 }

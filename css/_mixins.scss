@@ -1,7 +1,7 @@
 @mixin a-font($a-font-size, $color-1) {
     display: block;
     font-size: $a-font-size;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans';
     font-weight: bold;
     font-stretch: normal;
     text-decoration: none;
@@ -10,16 +10,16 @@
 }
 
 @mixin h-font($h-font-size) {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans';
     font-size: $h-font-size;
     text-align: center;
 }
 
 @mixin p-font($p-font-size) {
-    display: block;
     font-size: $p-font-size;
-    font-family: cursive;
+    font-family: 'Open Sans';
     text-align: center;
+    line-height: 1.5em;
 }
 
 @mixin animate-a($font-size, $color-3, $color-1, $animation-duration) {

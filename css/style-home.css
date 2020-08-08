@@ -72,7 +72,7 @@ body {
 #header #dropdown-menu #dropdown-content a {
   display: block;
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans';
   font-weight: bold;
   font-stretch: normal;
   text-decoration: none;
@@ -141,7 +141,7 @@ body {
 }
 
 #main-title h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans';
   font-size: 2.5rem;
   text-align: center;
   color: white;
@@ -156,7 +156,7 @@ body {
 #main-title a {
   display: block;
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans';
   font-weight: bold;
   font-stretch: normal;
   text-decoration: none;
@@ -168,6 +168,7 @@ body {
   position: absolute;
   left: 40%;
   bottom: 15%;
+  border-radius: 1em;
 }
 
 #main-title a:link, #main-title a:visited {
@@ -177,11 +178,9 @@ body {
 }
 
 #main-title a:hover, #main-title a:active {
-  width: 70vw;
   color: #99582aff;
   background-color: white;
   padding: 0.4em;
-  font-size: 1.2rem;
 }
 
 #top-content {
@@ -202,30 +201,28 @@ body {
 }
 
 #sub-title h2 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans';
   font-size: 1.5rem;
   text-align: center;
   color: #6f1d1bff;
   width: 100%;
   margin-bottom: 1em;
   padding-bottom: 0.3em;
-  -webkit-box-shadow: 0px 1px 1px #99582aff;
-          box-shadow: 0px 1px 1px #99582aff;
+  -webkit-box-shadow: 0px 1px 1px black;
+          box-shadow: 0px 1px 1px black;
 }
 
 #sub-title p {
-  display: block;
   font-size: 1.1rem;
-  font-family: cursive;
+  font-family: 'Open Sans';
   text-align: center;
+  line-height: 1.5em;
   text-align: center;
   color: black;
   width: 100%;
   height: 100%;
-  border: 2px solid #99582aff;
+  border: 1px solid black;
   padding: 1em;
-  -webkit-box-shadow: 1px 1px 1px #99582aff;
-          box-shadow: 1px 1px 1px #99582aff;
 }
 
 #images-container {
@@ -239,8 +236,6 @@ body {
 
 #images-container .card-container {
   position: relative;
-  -webkit-box-shadow: 1px 2px 2px grey;
-          box-shadow: 1px 2px 2px grey;
   width: 100%;
   height: 100%;
   display: -ms-grid;
@@ -252,18 +247,18 @@ body {
 }
 
 #images-container .card-container P {
-  display: block;
-  font-size: 1rem;
-  font-family: cursive;
+  font-size: 2rem;
+  font-family: 'Open Sans';
   text-align: center;
-  color: #6f1d1bff;
+  line-height: 1.5em;
+  width: 70%;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
   opacity: 0.8;
   padding: 10px;
   position: absolute;
   z-index: 2;
-  background-color: white;
-  -webkit-box-shadow: 1px 2px 2px #6f1d1bff;
-          box-shadow: 1px 2px 2px #6f1d1bff;
 }
 
 #images-container .card-container img {
@@ -288,10 +283,10 @@ body {
 }
 
 #rank p {
-  display: block;
   font-size: 1.5rem;
-  font-family: cursive;
+  font-family: 'Open Sans';
   text-align: center;
+  line-height: 1.5em;
   color: white;
   padding: 0.6em;
 }
@@ -357,8 +352,8 @@ body {
 }
 
 #sub-content-1 #review .review-item h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
   text-align: center;
   color: #6f1d1bff;
   font-weight: bold;
@@ -366,10 +361,10 @@ body {
 }
 
 #sub-content-1 #review .review-item p {
-  display: block;
   font-size: 1rem;
-  font-family: cursive;
+  font-family: 'Open Sans';
   text-align: center;
+  line-height: 1.5em;
   color: black;
 }
 
@@ -387,7 +382,7 @@ body {
 #sub-content-1 #yelp-review a {
   display: block;
   font-size: 1.2rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans';
   font-weight: bold;
   font-stretch: normal;
   text-decoration: none;
@@ -395,36 +390,37 @@ body {
   color: white;
   width: 50%;
   margin: 0.3em 2em 0 1.5em;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 1em;
+  padding: 0.2em;
 }
 
 #sub-content-1 #yelp-review a:link, #sub-content-1 #yelp-review a:visited {
   color: white;
   border: 2px solid white;
-  padding: 0.2em;
 }
 
 #sub-content-1 #yelp-review a:hover, #sub-content-1 #yelp-review a:active {
-  color: #bb9457ff;
+  color: white;
   border: 2px solid #bb9457ff;
-  padding: 1em;
 }
 
-#order-info {
+#order {
   width: 80%;
-  min-height: 40vh;
+  min-height: 50vh;
   display: -ms-grid;
   display: grid;
-  row-gap: 2vh;
+  row-gap: 2.5vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
 }
 
-#order-info a.button-1 {
+#order a.button-1 {
   display: block;
   font-size: 1.8rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans';
   font-weight: bold;
   font-stretch: normal;
   text-decoration: none;
@@ -435,19 +431,30 @@ body {
   text-align: center;
 }
 
-#order-info a.button-1:link, #order-info a.button-1:visited {
+#order a.button-1:link, #order a.button-1:visited {
   color: #bb9457ff;
 }
 
-#order-info a.button-1:hover, #order-info a.button-1:active {
+#order a.button-1:hover, #order a.button-1:active {
   color: #6f1d1bff;
   font-size: 2rem;
 }
 
-#order-info a.button-2 {
+#order .order-info {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+#order .order-info a {
   display: block;
-  font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-family: 'Open Sans';
   font-weight: bold;
   font-stretch: normal;
   text-decoration: none;
@@ -456,18 +463,22 @@ body {
   width: 50vw;
   margin: 0.3em 2em 0em 2em;
   padding: 0.4em;
-  -webkit-box-shadow: 1px 1px 2px #6f1d1bff;
-          box-shadow: 1px 1px 2px #6f1d1bff;
+  background: url(../images/home-background-vegetables.jpg);
+  background-size: cover;
+  background-position: top;
+  border-radius: 1em;
+  -webkit-box-shadow: 1px 1px 2px grey;
+          box-shadow: 1px 1px 2px grey;
 }
 
-#order-info a.button-2:link, #order-info a.button-2:visited {
-  color: #bb9457ff;
-  border: 2px solid #99582aff;
+#order .order-info a:link, #order .order-info a:visited {
+  color: white;
+  border: 2px solid black;
 }
 
-#order-info a.button-2:hover, #order-info a.button-2:active {
+#order .order-info a:hover, #order .order-info a:active {
   color: #6f1d1bff;
-  border: 2px solid #99582aff;
+  border: 2px solid #6f1d1bff;
 }
 
 #contact-info {
@@ -483,18 +494,18 @@ body {
 }
 
 #contact-info .info h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
   text-align: center;
   color: white;
   margin-bottom: 0.3em;
 }
 
 #contact-info .info p {
-  display: block;
-  font-size: 0.8rem;
-  font-family: cursive;
+  font-size: 1rem;
+  font-family: 'Open Sans';
   text-align: center;
+  line-height: 1.5em;
   line-height: 1.5;
   color: white;
   margin-top: 0.3em;
@@ -503,10 +514,10 @@ body {
 /*Content ends*/
 /*Footer starts*/
 #footer {
-  display: block;
   font-size: 1rem;
-  font-family: cursive;
+  font-family: 'Open Sans';
   text-align: center;
+  line-height: 1.5em;
   background-color: #6f1d1bff;
   width: 100%;
   min-height: 8vh;
@@ -522,4 +533,169 @@ body {
 }
 
 /*Footer ends*/
+@media only screen and (min-width: 600px) {
+  #main-title {
+    min-height: 45vh;
+  }
+  #main-title h1 {
+    font-family: 'Open Sans';
+    font-size: 3rem;
+    text-align: center;
+    width: 40%;
+    line-height: 7vh;
+    left: 50%;
+    bottom: 35%;
+    text-align: left;
+  }
+  #main-title a {
+    display: block;
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-stretch: normal;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 30vw;
+    left: 50%;
+  }
+  #top-content {
+    width: 100%;
+    min-height: 80vh;
+    display: -ms-grid;
+    display: grid;
+    row-gap: 3vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  #sub-title {
+    width: 90%;
+    min-height: 20vh;
+  }
+  #sub-title h2 {
+    font-family: 'Open Sans';
+    font-size: 2rem;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 2px black;
+            box-shadow: 0px 1px 2px black;
+  }
+  #sub-title p {
+    font-size: 1.1rem;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 1.5em;
+    border: 1px solid black;
+    padding: 1.5em;
+    -webkit-box-shadow: 1px 1px 2px grey;
+            box-shadow: 1px 1px 2px grey;
+  }
+  #images-container {
+    width: 90%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2vw;
+            column-gap: 2vw;
+  }
+  #images-container .card-container P {
+    font-size: 2.5rem;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 1.5em;
+    width: 75%;
+  }
+  #rank {
+    width: 80%;
+    height: 25vh;
+    border-radius: 25px;
+  }
+  #rank p {
+    width: 90%;
+    font-size: 1.8rem;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: bold;
+    padding: 1em;
+  }
+  #sub-content-1 {
+    min-height: 40vh;
+  }
+  #sub-content-1 #review {
+    width: 90%;
+    min-height: 15vh;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  #sub-content-1 #yelp-review {
+    width: 70%;
+    min-height: 10vh;
+  }
+  #sub-content-1 #yelp-review a {
+    display: block;
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-stretch: normal;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 50%;
+    padding: 0.4em;
+  }
+  #order {
+    min-height: 30vh;
+    display: -ms-grid;
+    display: grid;
+  }
+  #order a.button-1 {
+    display: block;
+    font-size: 2rem;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-stretch: normal;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+  #order a.button-1:hover, #order a.button-1:active {
+    font-size: 2.2rem;
+  }
+  #order .order-info {
+    height: 13vh;
+  }
+  #order .order-info a {
+    display: block;
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-stretch: normal;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 40vw;
+    padding: 0.8em;
+  }
+  #contact-info .info h2 {
+    font-family: 'Open Sans';
+    font-size: 2rem;
+    text-align: center;
+  }
+  #contact-info .info p {
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 1.5em;
+  }
+  /*Content ends*/
+  /*Footer starts*/
+  #footer {
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 1.5em;
+  }
+  /*Footer ends*/
+}
 /*# sourceMappingURL=style-home.css.map */

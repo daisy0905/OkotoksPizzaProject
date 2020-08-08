@@ -1,0 +1,135 @@
+#main-title {
+    min-height: 45vh;
+
+    h1 {
+        @include h-font(3rem);
+        width: 40%;
+        line-height: 7vh;
+        left: 50%;
+        bottom: 35%;
+        text-align: left;
+    }
+
+    a {
+        @include a-font(1.5rem, $color-1);
+        width: 30vw;
+        left: 50%;
+    }
+}
+
+#top-content {
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    row-gap: 3vh;
+    align-items: center;
+    justify-items: center;
+}
+    
+#sub-title {
+    width: 90%;
+    min-height: 20vh;
+
+    h2 {
+        @include h-font(2rem);
+        box-shadow: 0px 1px 2px $color-6;
+    }
+        
+    p {
+        @include p-font(1.1rem);
+        border: 1px solid $color-6;
+        padding: 1.5em;
+        box-shadow: 1px 1px 2px $color-4;
+    }
+}
+            
+#images-container {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2vw;
+        
+    .card-container {
+
+        P {
+            @include p-font(2.5rem);
+            width: 75%;
+        }
+    }                          
+}
+
+#rank {
+    width: 80%;
+    height: 25vh;
+    border-radius: 25px;
+
+    p {
+        width: 90%;
+        @include p-font(1.8rem);
+        font-weight: bold;
+        padding: 1em;
+    }
+}
+
+#sub-content-1 {
+    min-height: 40vh;
+
+    #review {
+        width: 90%;
+        min-height: 15vh;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #yelp-review {
+        width: 70%;
+        min-height: 10vh;
+
+        a {
+            @include a-font(1.5rem, $color-1);
+            width: 50%;
+            padding: 0.4em;
+        }
+    }
+}
+
+#order {
+    min-height: 30vh;
+    display: grid;
+    
+    a.button-1 {
+        @include a-font(2rem, $color-1);
+                
+        &:hover, &:active {
+            font-size: 2.2rem;
+        }
+    }
+    
+    .order-info {
+        height: 13vh;
+
+        a {
+            @include a-font(1.5rem, $color-1);  
+            width: 40vw;
+            padding: 0.8em;
+        }
+    }
+}
+
+#contact-info {
+    
+    .info {
+        h2 {
+            @include h-font(2rem);
+        }
+            
+        p {
+            @include p-font(1.5rem);
+        }    
+    }           
+}
+/*Content ends*/
+
+/*Footer starts*/
+#footer {
+    @include p-font(1.5rem); 
+} 
+/*Footer ends*/

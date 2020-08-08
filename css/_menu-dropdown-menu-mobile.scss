@@ -1,0 +1,69 @@
+#menu-nav {
+    width:100%;
+    min-height: 10vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    h1 {
+        @include h-font(1.5rem);
+        background-color: $color-4;
+        color: $color-1;
+        padding: 0.3em;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+}
+
+#dropdown-menu-2 {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: top;
+    width: 100%;
+    padding:0.3em;
+
+    &:hover {
+        min-height: 45vh;
+    }
+
+    &:hover img {
+        display: block;
+    }
+    
+    img {
+        height: 3vh;
+        cursor: pointer;
+    }
+
+
+    &:hover #dropdown-content-2 {
+        display: block;
+    }
+
+    #dropdown-content-2 {
+        display: none;
+        position: absolute;
+        top: 4vh;
+        width: 100%;
+    
+        a {
+            @include a-font(1.2rem, $color-1);
+            width: 100%;
+            padding: 0.4em;
+            
+            &:link, &:visited {
+                background-color: $color-4;
+            }
+            
+            &:hover {
+                background-color: $color-5;  
+            }
+            
+            &:active {
+                background-color: $color-1;
+            }
+        }
+    } 
+}

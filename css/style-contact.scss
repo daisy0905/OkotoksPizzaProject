@@ -1,0 +1,136 @@
+@import '_mixins';
+@import '_variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center; 
+}
+
+/*Header starts*/
+@import '_header-mobile';
+/*Header ends*/
+
+/*Content starts*/
+#content {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-row-gap: 2vh;
+    justify-items: center;
+    align-items: center;
+}
+
+#contact {
+    width: 90%;
+    min-height: 70vh;
+    display: grid;
+    row-gap: 2vh;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid $color-6;
+
+    #contact-info {
+        width: 100%;
+        min-height: 30vh;
+        display: grid;
+        row-gap: 1vh;
+        align-items: center;
+        justify-items: center;
+    
+        h2 {
+            @include h-font(1.5rem);
+            color: $color-6;
+            font-weight: bold;
+        }
+        
+        a {
+            @include a-font(1.5rem, $color-1);  
+            width: 50vw;
+            margin: 0.3em 2em 0em 2em;
+            padding: 0.4em;
+            box-shadow: 1px 1px 2px $color-5;
+            display: block;
+
+            &:link, &:visited {
+                color: $color-2;
+                border: 2px solid $color-3;  
+            }
+                
+            &:hover, &:active {
+                color: $color-5;
+                border: 2px solid $color-3; 
+            }
+        }
+    }        
+
+    #location-hours {
+        width: 90%;
+        min-height: 40vh;
+        display: grid;
+        row-gap: 2vh;
+        align-items: center;
+        justify-items: center;
+        margin: 1em 0 1em 0;
+
+        h2 {
+            @include h-font(1.5rem);
+            color: $color-6;
+        }
+        
+        p {
+            @include p-font(1.2rem);
+            width: 100%;
+            line-height: 1.5;
+            color: $color-6;
+            margin-top: 0.3em;
+        }    
+    }
+}
+
+#google-map {
+    width: 90%;
+    min-height: 30vh;
+    display: grid;
+    row-gap: 2vh;
+    justify-items: center;
+    align-items: center;
+
+    #map-location {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    
+        iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+/*Content ends*/
+
+/*Footer starts*/
+#footer {
+    @include p-font(1rem);
+    background-color: $color-5;
+    width: 100%;
+    min-height: 8vh;
+    color: $color-1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} 
+/*Footer ends*/
