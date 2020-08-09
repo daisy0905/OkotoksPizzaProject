@@ -1,0 +1,32 @@
+/*Content starts*/
+#main-title {
+    min-height: 45vh;
+    justify-items: center;
+    align-items: center;
+
+   h1 {
+        @include h-font(2.5rem);
+        color: $color-1;
+        font-weight: bold;
+        line-height: 8vh;
+        width: 70%;
+        position: absolute;
+        bottom: 55%;
+        text-shadow: 0 2px 2px $color-6;
+        left: 20%;
+    }
+
+    P {
+        line-height: 4vh;
+        bottom: 40%;
+        width: 50%;
+        left: 30%;
+    }
+
+    a {
+        @include a-font(1.2rem, $color-1);
+        width: 30vw;
+        bottom: 20%;
+        left: 40%;
+    }
+}

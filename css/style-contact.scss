@@ -35,28 +35,22 @@ body {
     row-gap: 2vh;
     align-items: center;
     justify-items: center;
-    border: 1px solid $color-6;
 
     #contact-info {
-        width: 100%;
+        width: 80%;
         min-height: 30vh;
         display: grid;
         row-gap: 1vh;
         align-items: center;
         justify-items: center;
-    
-        h2 {
-            @include h-font(1.5rem);
-            color: $color-6;
-            font-weight: bold;
-        }
+        border-bottom: 1px solid $color-6;
         
         a {
-            @include a-font(1.5rem, $color-1);  
-            width: 50vw;
-            margin: 0.3em 2em 0em 2em;
+            @include a-font(1rem, $color-1);  
+            width: 40vw;
             padding: 0.4em;
             box-shadow: 1px 1px 2px $color-5;
+            border-radius: 1em;;
             display: block;
 
             &:link, &:visited {
@@ -71,22 +65,17 @@ body {
         }
     }        
 
-    #location-hours {
-        width: 90%;
-        min-height: 40vh;
+    .location-hours {
+        width: 80%;
+        min-height: 20vh;
         display: grid;
         row-gap: 2vh;
         align-items: center;
         justify-items: center;
-        margin: 1em 0 1em 0;
-
-        h2 {
-            @include h-font(1.5rem);
-            color: $color-6;
-        }
+        border-bottom: 1px solid $color-6;
         
         p {
-            @include p-font(1.2rem);
+            @include p-font(1rem);
             width: 100%;
             line-height: 1.5;
             color: $color-6;

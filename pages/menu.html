@@ -13,29 +13,44 @@
 </head>
 
 <body>
-<!--Header starts-->
-<section id="header">
-    <img src="../images/okotoks-pizza-logo.png" alt="logo of Okotoks Pizza">
-    <span></span>
-    <div id="dropdown-menu">
-        <img src="../images/dropdown-btn-arrow.jpg" alt="dropdown button">
-        <div id="dropdown-content">
-            <a href="../index.html">HOME</a>
-            <a class="currentLink" href="about.html">ABOUT</a>
-            <a href="menu.html">MENU</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
-    </div>
-    <div id="desktop-menu">
-        <div class="desktop-content">
-            <a href="../index.html">HOME</a>
-            <a class="currentLink" href="about.html">ABOUT</a>
-            <a href="menu.html">MENU</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
-    </div>
-</section>
-<!--Header ends-->
+    <!--Header starts-->
+    <section id="header">
+        <article id="mobile-header">
+            <div id="mobile-header-logo">
+                <img src="../images/okotoks-pizza-logo.png" alt="logo of Okotoks Pizza">
+            </div>
+            <div id="mobile-header-spacer"></div>
+            <div id="mobile-hamburger-menu">
+                <input type="checkbox" name="mobile-menu-checkbox" id="mobile-menu-checkbox">
+                <div id="mobile-hamburger-container">
+                    <span id="mobile-line-1" class="mobile-hamburger-line"></span>
+                    <span id="mobile-line-2" class="mobile-hamburger-line"></span>
+                    <span id="mobile-line-3" class="mobile-hamburger-line"></span>
+                </div>
+
+                <div id="mobile-header-menu">
+                    <a href="../index.html">HOME</a>
+                    <a class="currentLink" href="about.html">ABOUT</a>
+                    <a href="menu.html">MENU</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </div>
+        </article>
+
+        <article id="desktop-header">
+            <div id="desktop-header-logo">
+                <img src="images/okotoks-pizza-logo.png" alt="logo of Okotoks Pizza">
+            </div>
+            <div id="desktop-header-spacer"></div>
+            <div id="desktop-menu">
+                <a href="../index.html">HOME</a>
+                <a class="currentLink" href="about.html">ABOUT</a>
+                <a href="menu.html">MENU</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </article>
+    </section>
+    <!--Header ends-->
 
 <!--Content starts-->
 <section id="content">
@@ -46,11 +61,19 @@
     </article>
 
     <!--Dropdown menu starts-->
-    <article id="menu-nav">
-        <h1>Menu</h1>
-        <div id="dropdown-menu-2">
-            <img src="../images/dropdown-btn-arrow.jpg" alt="dropdown-button">
-            <div id="dropdown-content-2">
+    <article id="menu-header">
+        <div id="mobile-header-spacer"></div>
+        <h1>MENU</h1>
+        <div id="mobile-header-spacer"></div>
+        <div id="hamberger-menu" class="sticky-icon">
+            <input type="checkbox" name="menu-checkbox" id="menu-checkbox">
+            <div id="hamburger-container">
+                <span id="line-1" class="hamburger-line"></span>
+                <span id="line-2" class="hamburger-line"></span>
+                <span id="line-3" class="hamburger-line"></span>
+            </div>
+
+            <div id="menu-header-content">
                 <a href="#Feature-Pizzas">Feature Pizzas</a>
                 <a href="#Classic-Pizzas">Classic Pizzas</a>
                 <a href="#Vegetarian-Pizzas">Vegetarian Pizzas</a>
@@ -63,13 +86,13 @@
     <!--Dropdown menu ends-->
 
     <article id="go-to-top">
-        <a href="#menu-nav">TOP</a>
+        <a href="#header">TO TOP</a>
     </article>
 
     <!--List of menu items starts-->
     <article class="menu-content">
         <div class="menu-items">
-            <h1 id="Feature-Pizzas">Feature Pizzas</h1>
+            <a id="Feature-Pizzas" class="item-name" href="#menu-header">Feature Pizzas</a>
             <div class="item-container-1">
                 <div class="item-content">
                     <img src="../images/menu-greek-style-pizza.png" alt="Greek-style Pizza">
@@ -114,7 +137,7 @@
     
     <article class="menu-content">
         <div class="menu-items">
-            <h1 id="Classic-Pizzas">Classic Pizzas</h1>
+            <a id="Classic-Pizzas" class="item-name" href="#menu-header">Classic Pizzas</a>
             <div class="item-container-1">
                 <div class="item-content">
                     <img src="../images/menu-pepperoni-pizza.jpg" alt="Pepperoni Pizza">
@@ -171,7 +194,6 @@
                 </div>
             </div>
 
-
             <div class="item-container-2">
                 <h2>Want to order more?</h2>
                 <p>*Please check our recommendations.</p>
@@ -188,7 +210,7 @@
     
     <article class="menu-content">
         <div class="menu-items">
-            <h1 id="Vegetarian-Pizzas">Vegetarian Pizzas</h1>
+            <a id="Vegetarian-Pizzas" class="item-name" href="#menu-header">Vegetarian Pizzas</a>
             <div class="item-container-1">
                 <div class="item-content">
                     <img src="../images/menu-veggie-pizza.jpg" alt="Veggie Pizza">
@@ -219,7 +241,7 @@
 
     <article class="menu-content">
         <div class="menu-items">
-            <h1 id="Custom-Tailored-Pizzas">Custom Tailored Pizzas</h1>
+            <a id="Custom-Tailored-Pizzas" class="item-name" href="#menu-header">Custom Tailored Pizzas</a>
             <div class="item-container-1">
                 <div class="item-content">
                     <img src="../images/menu-cheese-pizza.jpg" alt="Custom Tailored Pizza">
@@ -250,7 +272,7 @@
 
     <article class="menu-content">
         <div class="menu-items">
-            <h1 id="Spaghetti">Spaghetti</h1>
+            <a id="Spaghetti" class="item-name" href="#menu-header">Spaghetti</a>
             <div class="item-container-1">
                 <div class="item-content">
                     <img src="../images/Spinach-and-Balls-Spaghetti.jpg" alt="Spinach and Balls Spaghetti">
@@ -303,7 +325,7 @@
 
     <article class="menu-content">
         <div class="menu-items">
-            <h1 id="Salad">Salad</h1>
+            <a id="Salad" class="item-name" href="#menu-header">Salad</a>
             <div class="item-container-1">
                 <div class="item-content">
                     <img src="../images/caesar-salad.jpg" alt="Caesar Salad">
@@ -344,7 +366,7 @@
 
     <article class="menu-content">
         <div class="menu-items">
-            <h1 id="Bread">Bread</h1>
+            <a id="Bread" class="item-name" href="#menu-header">Bread</a>
             <div class="item-container-1">
                 <div class="item-content">
                     <img src="../images/garlic-cheese-bread.jpg" alt="Garlic Cheese Bread">
@@ -376,7 +398,7 @@
 
     <article class="menu-content">
         <div class="menu-items">
-            <h1 id="Wings">Wings</h1>
+            <a id="Wings" class="item-name" href="#menu-header">Wings</a>
             <div class="item-container-1">
                 <div class="item-content">
                     <img src="../images/traditional-chicken-wings.jpg" alt="Traditional Chicken Wings">
@@ -418,7 +440,7 @@
 
     <article class="menu-content">
         <div class="menu-items">
-            <h1 id="Desserts">Desserts</h1>
+            <a id="Desserts" class="item-name" href="#menu-header">Desserts</a>
             <div class="item-container-1">
                 <div class="item-content">
                     <img src="../images/nanaimo-bars.jpg" alt="Nanaimo Bars">
@@ -459,7 +481,7 @@
 
     <article class="menu-content">
         <div class="menu-items">
-            <h1 id="Drinks">Drinks</h1>
+            <a id="Drinks" class="item-name" href="#menu-header">Drinks</a>
             <div class="item-container-1">
                 <div class="item-content">
                     <img src="../images/pepsi.png" alt="Pepsi">
@@ -488,17 +510,17 @@
 
     <article class="menu-content-2">
         <div class="menu-items-2">
-            <h1 id="Feature-Combos">Feature Combos</h1>
+            <a id="Feature-Combos" class="item-name" href="#menu-header">Feature Combos</a>
             <div class="item-container-3">
                 <div class="combo-content">
                     <img src="../images/menu-greek-style-pizza.png" alt="Greek-style Pizza">
                     <div class="sides">
                         <img src="../images/traditional-chicken-wings.jpg" alt="Traditional Chicken Wings">
-                        <img src="../images/garlic-cheese-bread.jpg" alt="Garlic Cheese Bread">
+                        <img src="../images/caesar-salad.jpg" alt="Caesar Salad">
                         <img src="../images/pepsi.png" alt="Pepsi">
                     </div>
-                    <h2>Crere Island</h2>
-                    <p><b>Standard Combo</b><br>Greek-style pizza combined with sides including a dish of traditional chicken wings, garlic cheese bread and a medium size of pepsi</p>
+                    <h2>Crete Island</h2>
+                    <p><b>Standard Combo</b><br>Greek-style pizza combined with sides including a dish of caesar salad and a medium size of pepsi</p>
                     <p>*Please inform us when order if you would like to change the size of pizza, sides or drinks</p>
                 </div>
                 <div class="item-text">
@@ -529,7 +551,7 @@
     <!--List of menu items ends-->
 
     <article id="order-info">
-        <a href="tel:4035555555">CALL NOW TO ORDER</a>
+        <a class= "button-background" href="tel:4035555555">CALL NOW TO ORDER</a>
     </article>
 
     <article id="contact-info">

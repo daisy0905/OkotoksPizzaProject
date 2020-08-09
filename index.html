@@ -21,25 +21,40 @@
 <body>
     <!--Header starts-->
     <section id="header">
-       <img src="images/okotoks-pizza-logo.png" alt="logo of Okotoks Pizza">
-        <span></span>
-        <div id="dropdown-menu">
-            <img src="images/dropdown-btn-arrow.jpg" alt="dropdown button">
-            <div id="dropdown-content">
+        <article id="mobile-header">
+            <div id="mobile-header-logo">
+                <img src="images/okotoks-pizza-logo.png" alt="logo of Okotoks Pizza">
+            </div>
+            <div id="mobile-header-spacer"></div>
+            <div id="mobile-hamburger-menu">
+                <input type="checkbox" name="mobile-menu-checkbox" id="mobile-menu-checkbox">
+                <div id="mobile-hamburger-container">
+                    <span id="mobile-line-1" class="mobile-hamburger-line"></span>
+                    <span id="mobile-line-2" class="mobile-hamburger-line"></span>
+                    <span id="mobile-line-3" class="mobile-hamburger-line"></span>
+                </div>
+
+                <div id="mobile-header-menu">
+                    <a class="currentLink" href="index.html">HOME</a>
+                    <a href="pages/about.html">ABOUT</a>
+                    <a href="pages/menu.html">MENU</a>
+                    <a href="pages/contact.html">CONTACT</a>
+                </div>
+            </div>
+        </article>
+
+        <article id="desktop-header">
+            <div id="desktop-header-logo">
+                <img src="images/okotoks-pizza-logo.png" alt="logo of Okotoks Pizza">
+            </div>
+            <div id="desktop-header-spacer"></div>
+            <div id="desktop-menu">
                 <a class="currentLink" href="index.html">HOME</a>
                 <a href="pages/about.html">ABOUT</a>
                 <a href="pages/menu.html">MENU</a>
                 <a href="pages/contact.html">CONTACT</a>
             </div>
-        </div>
-        <div id="desktop-menu">
-            <div class="desktop-content">
-                <a class="currentLink" href="index.html">HOME</a>
-                <a href="pages/about.html">ABOUT</a>
-                <a href="pages/menu.html">MENU</a>
-                <a href="pages/contact.html">CONTACT</a>
-            </div>
-        </div>
+        </article>
     </section>
     <!--Header ends-->
 

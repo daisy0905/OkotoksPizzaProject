@@ -1,0 +1,20 @@
+.button-background {
+    @include a-font(1.5rem, $color-1); 
+    width: 60vw; 
+    padding: 0.4em;
+    background: url(../images/home-background-vegetables.jpg);
+    background-size: cover;
+    background-position: top;
+    border-radius: 1em;
+    box-shadow: 1px 1px 2px $color-4;
+
+    &:link, &:visited {
+        color: $color-1;
+        border: 2px solid $color-6;  
+    }
+        
+    &:hover, &:active {
+        color: $color-5;
+        border: 2px solid $color-5; 
+    }
+}

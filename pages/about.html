@@ -19,25 +19,40 @@
 <body>
     <!--Header starts-->
     <section id="header">
-        <img src="../images/okotoks-pizza-logo.png" alt="logo of Okotoks Pizza">
-        <span></span>
-        <div id="dropdown-menu">
-            <img src="../images/dropdown-btn-arrow.jpg" alt="dropdown button">
-            <div id="dropdown-content">
+        <article id="mobile-header">
+            <div id="mobile-header-logo">
+                <img src="../images/okotoks-pizza-logo.png" alt="logo of Okotoks Pizza">
+            </div>
+            <div id="mobile-header-spacer"></div>
+            <div id="mobile-hamburger-menu">
+                <input type="checkbox" name="mobile-menu-checkbox" id="mobile-menu-checkbox">
+                <div id="mobile-hamburger-container">
+                    <span id="mobile-line-1" class="mobile-hamburger-line"></span>
+                    <span id="mobile-line-2" class="mobile-hamburger-line"></span>
+                    <span id="mobile-line-3" class="mobile-hamburger-line"></span>
+                </div>
+
+                <div id="mobile-header-menu">
+                    <a href="../index.html">HOME</a>
+                    <a class="currentLink" href="about.html">ABOUT</a>
+                    <a href="menu.html">MENU</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </div>
+        </article>
+
+        <article id="desktop-header">
+            <div id="desktop-header-logo">
+                <img src="images/okotoks-pizza-logo.png" alt="logo of Okotoks Pizza">
+            </div>
+            <div id="desktop-header-spacer"></div>
+            <div id="desktop-menu">
                 <a href="../index.html">HOME</a>
                 <a class="currentLink" href="about.html">ABOUT</a>
                 <a href="menu.html">MENU</a>
                 <a href="contact.html">CONTACT</a>
             </div>
-        </div>
-        <div id="desktop-menu">
-            <div class="desktop-content">
-                <a href="../index.html">HOME</a>
-                <a class="currentLink" href="about.html">ABOUT</a>
-                <a href="menu.html">MENU</a>
-                <a href="contact.html">CONTACT</a>
-            </div>
-        </div>
+        </article>
     </section>
     <!--Header ends-->
 
@@ -79,12 +94,8 @@
 
         <!--Order-info starts-->
         <article id="order-info">
-            <div>
-                <a href="pages/menu.html">CLICK HERE TO SEE OUR MENU</a>
-            </div>
-            <div>
-                <a href="tel:4035555555">CALL NOW TO ORDER</a>
-            </div>
+            <a class= "button-background" href="menu.html">DISCOVER OUR MENU</a>
+            <a class= "button-background" href="tel:4035555555">CALL NOW TO ORDER</a>
         </article>
         <!--Order-info ends-->
 
@@ -96,7 +107,7 @@
             <div class="bottom-text">
                 <i class="fas fa-utensils fa-2x"></i>
                 <h2>Quality Foods</h2>
-                <p>Okotoks Pizzas are made with only freshest ingredients like mozzarella, roma tomatoes, made-from-scratch sauce and even features premium toppings like Sorriso Pepperoni, salami from Valbella meats and a healthy Flax crust.</p>
+                <p>Okotoks Pizzas are made with only freshest ingredients h sauce and even features premium toppings like Sorriso Pepperoni, salami from Valbella meats.</p>
             </div>
             <div class="bottom-image">
                 <img src="../images/about-made-with-love.jpg" alt="an image shows Okotoks Pizza is made with love.">
@@ -120,7 +131,7 @@
             <div class="bottom-text"> 
                 <i class="fas fa-truck fa-2x"></i>
                 <h2>Customer Service</h2>
-                <p>We have invested in cutting edge technology tools and have instilled a customer service culture throughout our company. Every interaction with Okotoks Pizza should be simple, professional, and enjoyable.</p>
+                <p>We have instilled a customer-service culture. Every interaction with Okotoks Pizza should be simple, professional, and enjoyable.</p>
             </div>  
         </article>
         <!--Bottom-content ends-->

@@ -11,30 +11,47 @@
     <title>Contact</title>
     <link rel="stylesheet" href="../css/style-contact.css">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <script defer
+    src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
     <!--Header starts-->
     <section id="header">
-        <img src="../images/okotoks-pizza-logo.png" alt="logo of Okotoks Pizza">
-        <span></span>
-        <div id="dropdown-menu">
-            <img src="../images/dropdown-btn-arrow.jpg" alt="dropdown button">
-            <div id="dropdown-content">
+        <article id="mobile-header">
+            <div id="mobile-header-logo">
+                <img src="../images/okotoks-pizza-logo.png" alt="logo of Okotoks Pizza">
+            </div>
+            <div id="mobile-header-spacer"></div>
+            <div id="mobile-hamburger-menu">
+                <input type="checkbox" name="mobile-menu-checkbox" id="mobile-menu-checkbox">
+                <div id="mobile-hamburger-container">
+                    <span id="mobile-line-1" class="mobile-hamburger-line"></span>
+                    <span id="mobile-line-2" class="mobile-hamburger-line"></span>
+                    <span id="mobile-line-3" class="mobile-hamburger-line"></span>
+                </div>
+
+                <div id="mobile-header-menu">
+                    <a href="../index.html">HOME</a>
+                    <a class="currentLink" href="about.html">ABOUT</a>
+                    <a href="menu.html">MENU</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </div>
+        </article>
+
+        <article id="desktop-header">
+            <div id="desktop-header-logo">
+                <img src="images/okotoks-pizza-logo.png" alt="logo of Okotoks Pizza">
+            </div>
+            <div id="desktop-header-spacer"></div>
+            <div id="desktop-menu">
                 <a href="../index.html">HOME</a>
                 <a class="currentLink" href="about.html">ABOUT</a>
                 <a href="menu.html">MENU</a>
                 <a href="contact.html">CONTACT</a>
             </div>
-        </div>
-        <div id="desktop-menu">
-            <div class="desktop-content">
-                <a href="../index.html">HOME</a>
-                <a class="currentLink" href="about.html">ABOUT</a>
-                <a href="menu.html">MENU</a>
-                <a href="contact.html">CONTACT</a>
-            </div>
-        </div>
+        </article>
     </section>
     <!--Header ends-->
 
@@ -42,14 +59,16 @@
     <section id="content">
         <article id="contact">
             <div id="contact-info">
-                <h2>CONTACT US</h2>
+                <i class="fas fa-phone-volume fa-2x"></i>
                 <a href="tel:4035555555">PHONE US</a>
                 <a href="mailto:info@okotokspizza.ca">EMAIL US</a>
             </div>
-            <div id="location-hours">
-                <h2>LOCATION</h2>
+            <div class="location-hours">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
                 <p>420 Big Rock Ln<br>Okotoks, Alberta<br>T1S 1B4</p>
-                <h2>OPEN HOURS</h2>
+            </div>
+            <div class="location-hours">
+                <i class="fas fa-hourglass-half fa-2x"></i>
                 <p>Mon - Thurs : 12 PM - 11 PM<br>Fri - Sat: 12PM - 12 AM<br>Sun: 4 PM - 10 PM</p>
             </div>
         </article>

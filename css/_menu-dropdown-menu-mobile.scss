@@ -1,69 +1,78 @@
-#menu-nav {
-    width:100%;
-    min-height: 10vh;
+#menu-header {
+    width: 100%;
+    min-height: 30vh;
     display: grid;
+    grid-template-columns: 4fr 3fr 2fr 2fr;
     justify-items: center;
     align-items: center;
+    background-color: lightgrey;
 
     h1 {
         @include h-font(1.5rem);
-        background-color: $color-4;
-        color: $color-1;
-        padding: 0.3em;
-        border: none;
-        cursor: pointer;
-        width: 100%;
+        color: $color-6;
     }
 }
 
-#dropdown-menu-2 {
-    position: relative;
-    display: grid;
-    justify-items: center;
-    align-items: top;
-    width: 100%;
-    padding:0.3em;
+#hamberger-menu {
 
-    &:hover {
-        min-height: 45vh;
-    }
-
-    &:hover img {
-        display: block;
-    }
-    
-    img {
-        height: 3vh;
-        cursor: pointer;
-    }
-
-
-    &:hover #dropdown-content-2 {
-        display: block;
-    }
-
-    #dropdown-content-2 {
-        display: none;
+    #menu-checkbox {
+        width: 50px;
+        height: 50px;
         position: absolute;
-        top: 4vh;
+        opacity: 0;
+        z-index: 5;
+        }
+
+    #menu-checkbox:checked ~ #menu-header-content {
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #hamburger-container {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 50px;
+        height: 40px;
+        z-index: 4;
+        position: relative;
+
+        .hamburger-line {
+            width: 30px;
+            height: 4px;
+            background-color: $color-6;
+        }
+    }
+
+    #menu-header-content {
+        transition: all 0.5s ease-in-out;
+        position: absolute;
         width: 100%;
-    
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        top: 87vh;
+        opacity: 0;
+        height: 30vh;
+        background-color: $color-4;
+
         a {
-            @include a-font(1.2rem, $color-1);
-            width: 100%;
-            padding: 0.4em;
-            
+            @include a-font(1rem, $color-1);
+            font-weight: normal;
+            text-shadow: 0 1px 1px $color-6;
+
             &:link, &:visited {
-                background-color: $color-4;
+                color: $color-1;
             }
-            
+    
             &:hover {
-                background-color: $color-5;  
+                color: $color-6;  
             }
-            
+    
             &:active {
-                background-color: $color-1;
+                color: $color-6;
             }
         }
-    } 
+    }
 }

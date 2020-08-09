@@ -31,6 +31,9 @@ body {
 #main-title {
     width: 100%;
     min-height: 70vh;
+    background-position: center center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
     background: url(../images/about-backgroundimage-pizza.jpg);
     background-size: cover;
     background-position: top;
@@ -51,6 +54,7 @@ body {
         position: absolute;
         left: 15%;
         bottom: 50%;
+        text-shadow: 0 2px 2px $color-3;
     }
 
     P {
@@ -63,6 +67,7 @@ body {
         bottom: 25%;
         text-align: left;
         width: 70%;
+        text-shadow: 0 2px 2px $color-3;
     }
 
     a {
@@ -81,7 +86,6 @@ body {
         }
     
         &:hover, &:active {
-            width: 70vw;
             color: $color-3;
             background-color: $color-1;
             padding: 0.4em;
@@ -201,27 +205,8 @@ body {
     align-items: center;
     justify-items: center;
 
-    div {
-        a {
-            @include a-font(1.5rem, $color-1);  
-            width: 50vw;
-            margin: 0.3em 2em 0em 2em;
-            padding: 0.4em;
-            box-shadow: 1px 1px 2px $color-5;
-
-            &:link, &:visited {
-                color: $color-2;
-                border: 2px solid $color-5;  
-            }
-                
-            &:hover, &:active {
-                color: $color-5;
-                border: 2px solid $color-5; 
-            }
-        }
-    }
+    @import '_a-button-with-background-mobile';
 }   
-
 /*Order-info ends*/
 
 /*Bottom-content starts*/
@@ -253,10 +238,6 @@ body {
         border-bottom: 1px solid $color-6;
         padding: 1em;
 
-        i {
-            height: 5vh;
-        }
-
         h2{
             height: 5vh;
             @include h-font(1.5rem);
@@ -281,15 +262,15 @@ body {
     row-gap: 2vh;
     justify-items: center;
     align-items: center;
-    background-c
-#contact-info {
-    width: 60%;
-    display: olor: $color-4;
-}
-grid;
-    row-gap: 1vh;
-    justify-items: center;
-    align-items: center;
+    background-color: $color-4;
+
+    #contact-info {
+        width: 60%;
+        display: grid;
+        row-gap: 1vh;
+        justify-items: center;
+        align-items: center;
+    }
 
     a {
         width: 100%;
@@ -357,3 +338,7 @@ grid;
     align-items: center;
 } 
 /*Footer ends*/
+
+@media only screen and (min-width: 600px) {
+    @import '_style-about-tablet';
+}

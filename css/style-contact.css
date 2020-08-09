@@ -18,58 +18,85 @@ body {
 
 /*Header starts*/
 #header {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mobile-header {
   width: 100%;
   min-height: 15vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 15vw auto 30vw 0vw;
-      grid-template-columns: 15vw auto 30vw 0vw;
-  row-gap: 0.2vh;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-grid-columns: 2fr 6fr 2fr;
+      grid-template-columns: 2fr 6fr 2fr;
 }
 
-#header img {
-  width: 80%;
-  display: block;
+#mobile-header #mobile-header-logo img {
+  width: 100%;
+  padding: 0.3em;
 }
 
-#header #dropdown-menu {
-  position: relative;
+#mobile-header #mobile-hamburger-menu #mobile-menu-checkbox {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  opacity: 0;
+  z-index: 5;
+}
+
+#mobile-header #mobile-hamburger-menu #mobile-menu-checkbox:checked ~ #mobile-header-menu {
+  top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#mobile-header #mobile-hamburger-menu #mobile-hamburger-container {
   display: -ms-grid;
   display: grid;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
-  height: 100%;
+  width: 50px;
+  height: 40px;
+  z-index: 4;
+  position: relative;
 }
 
-#header #dropdown-menu:hover #dropdown-content {
-  display: block;
+#mobile-header #mobile-hamburger-menu #mobile-hamburger-container .mobile-hamburger-line {
+  width: 30px;
+  height: 4px;
+  background-color: black;
 }
 
-#header #dropdown-menu:hover img {
-  display: block;
-}
-
-#header #dropdown-menu img {
-  width: 30%;
-  cursor: pointer;
+#mobile-header #mobile-hamburger-menu #mobile-header-menu {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   position: absolute;
-  top: 3vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -15vh;
+  opacity: 0;
+  left: 0;
+  min-height: 15vh;
+  background-color: #bb9457ff;
 }
 
-#header #dropdown-menu #dropdown-content {
-  display: none;
-  position: absolute;
-  top: 7vh;
-}
-
-#header #dropdown-menu #dropdown-content a {
+#mobile-header #mobile-hamburger-menu #mobile-header-menu a {
   display: block;
   font-size: 1rem;
   font-family: 'Open Sans';
@@ -78,28 +105,27 @@ body {
   text-decoration: none;
   text-align: center;
   color: white;
-  width: 100%;
-  padding: 0.2em;
-  margin: 0.3em 0 0.3em 0;
 }
 
-#header #dropdown-menu #dropdown-content a:link, #header #dropdown-menu #dropdown-content a:visited {
-  background-color: #bb9457ff;
+#mobile-header #mobile-hamburger-menu #mobile-header-menu a:link, #mobile-header #mobile-hamburger-menu #mobile-header-menu a:visited {
+  color: white;
 }
 
-#header #dropdown-menu #dropdown-content a:hover {
-  background-color: #99582aff;
+#mobile-header #mobile-hamburger-menu #mobile-header-menu a:hover {
+  color: #99582aff;
 }
 
-#header #dropdown-menu #dropdown-content a:active {
-  background-color: white;
+#mobile-header #mobile-hamburger-menu #mobile-header-menu a:active {
+  color: #99582aff;
 }
 
-#header #dropdown-menu #dropdown-content a.currentLink {
-  background-color: #6f1d1bff;
+#mobile-header #mobile-hamburger-menu #mobile-header-menu a.currentLink {
+  color: #6f1d1bff;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
-#header #desktop-menu {
+#desktop-header {
   display: none;
 }
 
@@ -127,11 +153,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  border: 1px solid black;
 }
 
 #contact #contact-info {
-  width: 100%;
+  width: 80%;
   min-height: 30vh;
   display: -ms-grid;
   display: grid;
@@ -140,30 +165,23 @@ body {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-}
-
-#contact #contact-info h2 {
-  font-family: 'Open Sans';
-  font-size: 1.5rem;
-  text-align: center;
-  color: black;
-  font-weight: bold;
+  border-bottom: 1px solid black;
 }
 
 #contact #contact-info a {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: 'Open Sans';
   font-weight: bold;
   font-stretch: normal;
   text-decoration: none;
   text-align: center;
   color: white;
-  width: 50vw;
-  margin: 0.3em 2em 0em 2em;
+  width: 40vw;
   padding: 0.4em;
   -webkit-box-shadow: 1px 1px 2px #6f1d1bff;
           box-shadow: 1px 1px 2px #6f1d1bff;
+  border-radius: 1em;
   display: block;
 }
 
@@ -177,9 +195,9 @@ body {
   border: 2px solid #99582aff;
 }
 
-#contact #location-hours {
-  width: 90%;
-  min-height: 40vh;
+#contact .location-hours {
+  width: 80%;
+  min-height: 20vh;
   display: -ms-grid;
   display: grid;
   row-gap: 2vh;
@@ -187,18 +205,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  margin: 1em 0 1em 0;
+  border-bottom: 1px solid black;
 }
 
-#contact #location-hours h2 {
-  font-family: 'Open Sans';
-  font-size: 1.5rem;
-  text-align: center;
-  color: black;
-}
-
-#contact #location-hours p {
-  font-size: 1.2rem;
+#contact .location-hours p {
+  font-size: 1rem;
   font-family: 'Open Sans';
   text-align: center;
   line-height: 1.5em;
