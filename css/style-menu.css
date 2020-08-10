@@ -836,7 +836,7 @@ body {
         grid-template-columns: 1fr 2fr 4fr 0.5fr;
   }
   #desktop-header #desktop-header-logo {
-    width: 70%;
+    width: 80%;
     display: -ms-grid;
     display: grid;
     justify-items: center;
@@ -884,8 +884,8 @@ body {
     border-bottom: 3px solid #99582aff;
   }
   #desktop-header #desktop-menu a.currentLink {
-    border-bottom: 3px solid #6f1d1bff;
-    color: #6f1d1bff;
+    border-bottom: 3px solid #bb9457ff;
+    color: #bb9457ff;
   }
   /*Header ends*/
   /*Content starts*/
@@ -1021,11 +1021,12 @@ body {
   /*Content ends*/
   /*Footer starts*/
   #footer #contact-info {
+    width: 95%;
     min-height: 15vh;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -webkit-column-gap: 1.5vw;
-            column-gap: 1.5vw;
+    -ms-grid-columns: 1.2fr 1fr 1.2fr;
+        grid-template-columns: 1.2fr 1fr 1.2fr;
+    -webkit-column-gap: 1vw;
+            column-gap: 1vw;
   }
   #footer #contact-info .info h2 {
     font-family: 'Open Sans';

@@ -1,28 +1,29 @@
 #footer {
 
     #contact-info {
-        width: 95%;
-        min-height: 15vh;
-        grid-template-columns: 1.2fr 1fr 1.2fr;
+        width: 90%;
+        min-height: 20vh;
+        grid-template-columns: 6fr 2fr 6fr;
         column-gap: 1vw;
         
         .info {
             
             h2 {
-                @include h-font(1.2rem);
+                @include h-font(1.5rem);
             }
                 
             p {
-                @include p-font(1rem);
+                @include p-font(1.2rem);
                 line-height: 1.8;
             }    
         }           
     }
     
     #copyright {
-    
+        height: 8vh;
+
         p {
-        @include p-font(1rem);
+        @include p-font(1.2rem);
         }
     } 
 }

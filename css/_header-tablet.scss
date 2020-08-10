@@ -11,7 +11,7 @@
     grid-template-columns: 1fr 2fr 4fr 0.5fr;
 
     #desktop-header-logo {
-        width: 70%;
+        width: 80%;
         display: grid;
         justify-items: center;
         align-items: center;
@@ -49,8 +49,8 @@
             }
         
             &.currentLink {
-                border-bottom: 3px solid $color-5;
-                color: $color-5;
+                border-bottom: 3px solid $color-2;
+                color: $color-2;
             }
         }
     }
