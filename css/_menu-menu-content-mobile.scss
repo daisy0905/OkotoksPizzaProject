@@ -26,105 +26,115 @@
         align-items: center;
         position: sticky;
         top: 0;
+        z-index: 10;
     }
 
     .item-container-1 {
         width: 90%;
-        min-height: 40vh;
+        min-height: 50vh;
         display: grid;
         row-gap: 1vh;
         justify-items: center;
         align-items: center;
         border: 2px solid $color-6;
     
-        .item-content {
+        .item-image {
             width: 90%;
-
+            height: 35vh;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            row-gap: 1vh;
+            padding: 0.4em;
+            
             img {
                 width: 100%;
-                height: 30vh;
+                height: 100%;
                 object-fit: cover;
-                margin-top: 2vh;
+                padding-top: 0.8em;
             }
-            
+        }
+             
+        .item-text {
+            width: 90%;
+            min-height: 45vh;
+            margin: 0.6em 0.6em 0.6em 1em;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+    
             h2 {
                 @include h-font(1.5rem);
                 color: $color-6;
                 padding: 0.4em;
                 border-bottom: 1px solid $color-6;
             }
-
+    
+                
+            h3 {
+                @include h-font(1.2rem);
+                color: $color-6;
+            }
+    
             p {
                 @include p-font(1rem);
                 width: 100%;
                 padding: 10px;
                 color: $color-6;
-                border-bottom: 1px solid $color-6;
-            }
-        }
-
-        .item-text {
-            width: 100%;
-            margin: 0.6em 0.6em 0.6em 1em;
-
-            h3 {
-                @include h-font(1.2rem);
-                color: $color-6;
-            }
-
-            p {
-                @include p-font(1.2rem);
-                margin-top: 0.3em;
             }
         }
     }
+}
 
-    .item-container-2 {
+.item-container-2 {
+    width: 90%;
+    min-height: 30vh;
+    display: grid;
+    row-gap: 1vh;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid $color-6;
+
+    h2 {
+        @include h-font(1.5rem);
+        color: $color-5;
+        margin: 0.4em;
         width: 90%;
-        min-height: 30vh;
+    }
+
+    p {
+        @include p-font(1rem);
+        margin-top: 0.3em;
+        width: 100%;
+    }  
+
+    .extra-selection {
+        width: 50%;
+        min-height: 20vh;
         display: grid;
         row-gap: 1vh;
+        margin: 1em;
         justify-items: center;
         align-items: center;
-        border: 2px solid $color-6;
 
-        h2 {
-            @include h-font(1.5rem);
-            color: $color-5;
-            margin: 0.4em;
-            width: 90%;
-        }
-
-        p {
-            @include p-font(1rem);
-            margin-top: 0.3em;
+        a {
+            @include a-font(1rem, $color-1);
             width: 100%;
-        }
-
-        .extra-selection {
-            width: 50%;
-            min-height: 20vh;
-            display: grid;
-            row-gap: 1vh;
-            margin: 1em;
-
-            a {
-                @include a-font(1rem, $color-1);
-                width: 100%;
-                padding: 0.4em;
-                border: 1px solid $color-6;
-                
-                &:link, &:visited {
-                    color: $color-6;
-                }
-                
-                &:hover, &:active {
-                    color: $color-1;
-                    background-color: $color-3;  
-                }
+            padding: 0.4em;
+            border: 1px solid $color-6;
+            box-shadow: 1px 1px 1px $color-4;
+            border-radius: 1em;
+            
+            &:link, &:visited {
+                color: $color-6;
+            }
+            
+            &:hover, &:active {
+                color: $color-1;
+                background-color: $color-3;  
             }
         }
-    }
+    }    
 }
 
 .menu-content-2 {
@@ -166,7 +176,7 @@
         align-items: center;
         border: 2px solid $color-6;
     
-        .combo-content {
+        .combo-image {
             width: 90%;
             row-gap: 1vh;
 
@@ -195,7 +205,12 @@
                     margin-top: 2vh;
                 }
             }
-            
+        }
+
+        .combo-text {
+            width: 100%;
+            margin: 0.6em 0.6em 0.6em 1em;
+
             h2 {
                 @include h-font(1.5rem);
                 color: $color-6;
@@ -209,22 +224,11 @@
                 width: 100%;
                 padding: 10px;
                 color: $color-6;
-                border-bottom: 1px solid $color-6;
             }
-        }
-
-        .item-text {
-            width: 100%;
-            margin: 0.6em 0.6em 0.6em 1em;
-
+            
             h3 {
                 @include h-font(1.2rem);
                 color: $color-6;
-            }
-
-            p {
-                @include p-font(1.2rem);
-                margin-top: 0.3em;
             }
         }
     }

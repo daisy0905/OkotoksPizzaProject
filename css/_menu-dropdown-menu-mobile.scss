@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 30vh;
     display: grid;
-    grid-template-columns: 4fr 3fr 2fr 2fr;
+    grid-template-columns: 4fr 3fr 2fr 3fr;
     justify-items: center;
     align-items: center;
     background-color: lightgrey;
@@ -52,7 +52,7 @@
         display: grid;
         justify-items: center;
         align-items: center;
-        top: 87vh;
+        top: 82vh;
         opacity: 0;
         height: 30vh;
         background-color: $color-4;
@@ -67,11 +67,13 @@
             }
     
             &:hover {
-                color: $color-6;  
+                color: $color-6;
+                text-shadow: 0 1px 1px $color-5;  
             }
     
             &:active {
                 color: $color-6;
+                text-shadow: 0 1px 1px $color-5;
             }
         }
     }

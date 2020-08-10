@@ -1,7 +1,7 @@
 .button-background {
-    @include a-font(1rem, $color-1); 
+    @include a-font(1.5rem, $color-1); 
     width: 40vw; 
-    padding: 0.4em;
+    padding: 0.8em;
     background: url(../images/home-background-vegetables.jpg);
     background-size: cover;
     background-position: top;

@@ -1,3 +1,7 @@
+/*Header starts*/
+@import '_header-tablet';
+/*Header ends*/
+
 /*Content starts*/
 #main-title {
     min-height: 45vh;
@@ -24,9 +28,24 @@
     }
 
     a {
-        @include a-font(1.2rem, $color-1);
-        width: 30vw;
-        bottom: 20%;
-        left: 40%;
+        display: none;
     }
 }
+
+@import 'menu-dropdown-menu-tablet';
+
+#go-to-top {
+    bottom: 40vh;
+    left: 90vw;
+    width: 5%;
+}
+
+@import 'menu-menu-content-tablet';
+
+#order-info {
+    display: none;
+}
+/*Content ends*/
+
+/*Footer starts*/
+@import '_footer-tablet';

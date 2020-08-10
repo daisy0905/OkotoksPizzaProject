@@ -77,6 +77,35 @@ body {
     }
 }
 
+#go-to-top {
+    position: fixed;
+    bottom: 45vh;
+    right: 0;
+    width: 10%;
+    min-height: 20vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    z-index: 10;
+    
+    a {
+        @include a-font(0.8rem, $color-1);  
+        width: 100%;
+        padding: 0.6em;
+        box-shadow: 1px 1px 2px $color-5; 
+        opacity: 1;
+
+        &:link, &:visited {
+            background-color: $color-3;
+        }
+                
+        &:hover, &:active {
+            background-color: $color-5;
+            
+        }
+    }   
+}
+
 #top-content {
     width: 100%;
     min-height: 80vh;
@@ -254,11 +283,11 @@ body {
     }
 }
 
-#order {
+#order-mobile {
     width: 80%;
     min-height: 50vh;
     display: grid;
-    row-gap: 2.5vh;
+    row-gap: 2vh;
     align-items: center;
     justify-items: center;
     
@@ -308,42 +337,13 @@ body {
     }
 }
 
-#contact-info {
-    width: 100%;
-    min-height: 40vh;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    background-color: $color-4;
-    
-    .info {
-        h2 {
-            @include h-font(1.5rem);
-            color: $color-1;
-            margin-bottom: 0.3em;
-        }
-            
-        p {
-            @include p-font(1rem);
-            line-height: 1.5;
-            color: $color-1;
-            margin-top: 0.3em;
-        }    
-    }           
+#order-tablet-desktop {
+    display: none;
 }
 /*Content ends*/
 
 /*Footer starts*/
-#footer {
-    @include p-font(1rem);
-    background-color: $color-5;
-    width: 100%;
-    min-height: 8vh;
-    color: $color-1;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-} 
+@import 'footer-mobile';
 /*Footer ends*/
 
 @media only screen and (min-width: 600px) {

@@ -1,0 +1,27 @@
+#footer {
+
+    #contact-info {
+        min-height: 15vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1.5vw;
+        
+        .info {
+            
+            h2 {
+                @include h-font(1.2rem);
+            }
+                
+            p {
+                @include p-font(1rem);
+                line-height: 1.8;
+            }    
+        }           
+    }
+    
+    #copyright {
+    
+        p {
+        @include p-font(1rem);
+        }
+    } 
+}

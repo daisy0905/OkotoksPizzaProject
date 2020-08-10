@@ -1,4 +1,4 @@
-
+@import '_header-tablet';
 
 #main-title {
     min-height: 45vh;
@@ -21,8 +21,7 @@
     }
 
     a {
-        width: 30vw;
-        left: 20%;
+        display: none;
     }
 }
 
@@ -70,18 +69,19 @@
 /*Sub-content ends*/
 
 /*Order-info starts*/
-#order-info {
+#order-info-mobile {
+    display: none;
+}
+
+#order-info-tablet-desktop {
     width: 80%;
-    min-height: 20vh;
+    min-height: 10vh;
     display: grid;
     row-gap: 2vh;
     align-items: center;
     justify-items: center;
 
-
-    .button-background {
-        width: 40vw; 
-    }
+    @import '_a-button-with-background-tablet-desktop';
 }
 /*Order-info ends*/
 
@@ -98,35 +98,8 @@
         }
     }
 }
-
-#bottom-nav {
-    min-height: 25vh;
-    padding: 1em;
-
-    #contact-info {
-        width: 90%;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    a {
-        width: 80%;
-        @include a-font(1.2rem, $color-1);  
-    }
-}
-
-#nav-bar {
-    width: 90%;
-    grid-template-columns: 1fr 1fr;
-
-    a {
-        width: 80%;
-        @include a-font(1.2rem, $color-1);
-    }
-}
 /*Content ends*/
 
 /*Footer starts*/
-#footer {
-    @include p-font(1.5rem); 
-} 
+@import 'footer-tablet';
 /*Footer ends*/

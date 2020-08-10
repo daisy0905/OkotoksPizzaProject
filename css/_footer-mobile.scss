@@ -1,0 +1,54 @@
+#footer {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: $color-4;
+    margin-top: 3vh;
+
+    #contact-info {
+        width: 95%;
+        min-height: 30vh;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        
+        .info {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            padding: 0.6em;
+            
+            h2 {
+                @include h-font(1rem);
+                color: $color-1;
+            }
+                
+            p {
+                @include p-font(0.8rem);
+                line-height: 1.7;
+                color: $color-1;
+            }    
+        }           
+    }
+    
+    #copyright {
+        width: 100%;
+        height: 5vh;
+        background-color: $color-5;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    
+        p {
+        @include p-font(0.8rem);
+        width: 100%;
+        color: $color-1;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        }
+    } 
+}

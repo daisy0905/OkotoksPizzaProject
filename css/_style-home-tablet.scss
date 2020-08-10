@@ -1,3 +1,5 @@
+@import '_header-tablet';
+
 #main-title {
     min-height: 45vh;
 
@@ -11,10 +13,18 @@
     }
 
     a {
-        @include a-font(1.5rem, $color-1);
-        width: 30vw;
-        left: 50%;
+        display: none;
     }
+}
+
+#go-to-top {
+    bottom: 35vh;
+    right: 0;
+    width: 5%;
+    
+    a {
+        @include a-font(0.9rem, $color-1);  
+    }   
 }
 
 #top-content {
@@ -77,6 +87,7 @@
         width: 90%;
         min-height: 15vh;
         grid-template-columns: repeat(4, 1fr);
+        margin-top: 1.5em;
     }
 
     #yelp-review {
@@ -91,45 +102,65 @@
     }
 }
 
-#order {
-    min-height: 30vh;
+#order-mobile {
+    display: none;
+}
+
+#order-tablet-desktop {
+    width: 80%;
+    min-height: 20vh;
     display: grid;
+    row-gap: 2vh;
+    align-items: center;
+    justify-items: center;
     
     a.button-1 {
-        @include a-font(2rem, $color-1);
+        @include a-font(1.8rem, $color-1);
+        text-decoration: transparent;
+        text-align: center;
+        
+        &:link, &:visited {
+            color: $color-2;
+        }
                 
         &:hover, &:active {
-            font-size: 2.2rem;
+            color: $color-5;
+            font-size: 2rem;
         }
     }
     
     .order-info {
-        height: 13vh;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
 
         a {
             @include a-font(1.5rem, $color-1);  
-            width: 40vw;
-            padding: 0.8em;
+            width: 30vw;
+            margin: 0.3em 2em 0em 2em;
+            padding: 0.4em;
+            background: url(../images/home-background-vegetables.jpg);
+            background-size: cover;
+            background-position: top;
+            border-radius: 1em;
+            box-shadow: 1px 1px 2px $color-4;
+
+            &:link, &:visited {
+                color: $color-1;
+                border: 2px solid $color-6;  
+            }
+                
+            &:hover, &:active {
+                color: $color-5;
+                border: 2px solid $color-5; 
+            }
         }
     }
-}
-
-#contact-info {
-    
-    .info {
-        h2 {
-            @include h-font(2rem);
-        }
-            
-        p {
-            @include p-font(1.5rem);
-        }    
-    }           
 }
 /*Content ends*/
 
 /*Footer starts*/
-#footer {
-    @include p-font(1.5rem); 
-} 
+@import '_footer-tablet';
 /*Footer ends*/

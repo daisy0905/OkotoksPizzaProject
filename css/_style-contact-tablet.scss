@@ -1,0 +1,57 @@
+@import '_header-tablet.scss';
+
+#main-title {
+    min-height: 45vh;
+    justify-content: center;
+    position: relative;
+
+    h1 {
+        bottom: 40%;
+        left: 15%;
+        text-shadow: 0 2px 2px $color-6;
+    }
+
+    P {
+        bottom: 15%;
+        width: 70%;
+        left: 15%;
+    }
+}
+
+
+#content {
+    grid-row-gap: 0;
+}
+
+#contact-mobile {
+    display: none;
+}
+
+#contact-tablet-desktop {
+    width: 100%;
+    min-height: 20vh;
+    display: grid;
+    grid-template-columns: 5% 30% 25% 35% 5%;
+    row-gap: 0;
+    align-items: center;
+    justify-items: center;
+    background-color: grey;
+}
+
+.info-detail {
+    width: 90%;
+    min-height: 15vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    h2 {
+        @include h-font(1.5rem);
+        width: 100%;
+    }
+    
+    p {
+        @include p-font(1rem);
+        width: 100%;
+    }
+}

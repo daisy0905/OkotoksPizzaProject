@@ -1,0 +1,15 @@
+#menu-header {
+    min-height: 20vh;
+}
+
+#hamberger-menu {
+
+    #menu-header-content {
+        top: 60vh;
+        height: 20vh;
+
+        a {
+            @include a-font(1.2rem, $color-1);
+        }
+    }
+}

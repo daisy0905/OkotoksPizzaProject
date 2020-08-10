@@ -99,13 +99,14 @@ body {
 
 #go-to-top {
     position: fixed;
-    bottom: 40vh;
-    left: 82vw;
+    bottom: 45vh;
+    left: 83vw;
     width: 10%;
     min-height: 20vh;
     display: grid;
     align-items: center;
     justify-items: center;
+    z-index: 20;
     
     a {
         @include a-font(0.8rem, $color-1);  
@@ -115,7 +116,7 @@ body {
         opacity: 1;
 
         &:link, &:visited {
-            background-color: $color-4;
+            background-color: $color-3;
         }
                 
         &:hover, &:active {
@@ -129,13 +130,14 @@ body {
 
 #order-info {
     width: 80%;
-    min-height: 20vh;
+    min-height: 15vh;
     display: grid;
     align-items: center;
     justify-items: center;
+    padding-bottom: 2vh;
 
     a {
-        @include a-font(1.5rem, $color-1);  
+        @include a-font(1rem, $color-1);  
         margin: 0.3em 2em 0em 2em;
         padding: 0.4em;
         background: url(../images/home-background-vegetables.jpg);
@@ -155,43 +157,10 @@ body {
         }
     }
 }
-
-#contact-info {
-    width: 100%;
-    min-height: 40vh;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    background-color: $color-4;
-    
-    .info {
-        h2 {
-            @include h-font(1.2rem);
-            color: $color-1;
-            margin-bottom: 0.3em;
-        }
-            
-        p {
-            @include p-font(0.8rem);
-            line-height: 1.5;
-            color: $color-1;
-            margin-top: 0.3em;
-        }    
-    }           
-}
 /*Content ends*/
 
 /*Footer starts*/
-#footer {
-    @include p-font(1rem);
-    background-color: $color-5;
-    width: 100%;
-    min-height: 8vh;
-    color: $color-1;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-} 
+@import '_footer-mobile';
 /*Footer ends*/
 
 @media only screen and (min-width: 600px) {
