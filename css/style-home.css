@@ -373,7 +373,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background: url(../images/home-backgroundimage-pizza-2.jpg);
+  background: url(../images/home-background-vegetables.jpg);
   background-size: cover;
   background-position: top;
   padding-top: 0.3rem;
@@ -551,8 +551,8 @@ body {
   background-size: cover;
   background-position: top;
   border-radius: 1em;
-  -webkit-box-shadow: 1px 1px 2px grey;
-          box-shadow: 1px 1px 2px grey;
+  -webkit-box-shadow: 1px 1px 2px #afacac;
+          box-shadow: 1px 1px 2px #afacac;
 }
 
 #order-mobile .order-info a:link, #order-mobile .order-info a:visited {
@@ -579,7 +579,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  background-color: grey;
+  background-color: #afacac;
   margin-top: 3vh;
 }
 
@@ -606,7 +606,7 @@ body {
   padding: 0.6em;
 }
 
-#footer #contact-info .info h2 {
+#footer #contact-info .info h3 {
   font-family: 'Open Sans';
   font-size: 1rem;
   text-align: center;
@@ -780,8 +780,8 @@ body {
     line-height: 1.5em;
     border: 1px solid black;
     padding: 1.5em;
-    -webkit-box-shadow: 1px 1px 2px grey;
-            box-shadow: 1px 1px 2px grey;
+    -webkit-box-shadow: 1px 1px 2px #afacac;
+            box-shadow: 1px 1px 2px #afacac;
   }
   #images-container {
     width: 90%;
@@ -907,8 +907,8 @@ body {
     background-size: cover;
     background-position: top;
     border-radius: 1em;
-    -webkit-box-shadow: 1px 1px 2px grey;
-            box-shadow: 1px 1px 2px grey;
+    -webkit-box-shadow: 1px 1px 2px #afacac;
+            box-shadow: 1px 1px 2px #afacac;
   }
   #order-tablet-desktop #order-info .order-info-item a:link, #order-tablet-desktop #order-info .order-info-item a:visited {
     color: white;
@@ -928,7 +928,7 @@ body {
     -webkit-column-gap: 1vw;
             column-gap: 1vw;
   }
-  #footer #contact-info .info h2 {
+  #footer #contact-info .info h3 {
     font-family: 'Open Sans';
     font-size: 1.2rem;
     text-align: center;
@@ -950,6 +950,7 @@ body {
 }
 
 @media only screen and (min-width: 600px) and (min-width: 1024px) {
+  /*Header starts*/
   #desktop-header {
     -ms-grid-columns: 1fr 3fr 3fr 0.5fr;
         grid-template-columns: 1fr 3fr 3fr 0.5fr;
@@ -960,7 +961,7 @@ body {
   }
   #desktop-header #desktop-menu a {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Open Sans';
     font-weight: bold;
     font-stretch: normal;
@@ -968,23 +969,25 @@ body {
     text-align: center;
     color: black;
   }
+  /*Header ends*/
   #main-title {
     min-height: 40vh;
   }
   #main-title h1 {
     font-family: 'Open Sans';
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-align: center;
-    width: 50%;
+    width: 45%;
     left: 35%;
-    bottom: 40%;
+    bottom: 30%;
+    line-height: 10vh;
   }
   #go-to-top {
-    bottom: 15vh;
+    bottom: 25vh;
   }
   #go-to-top a {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Open Sans';
     font-weight: bold;
     font-stretch: normal;
@@ -1009,25 +1012,26 @@ body {
   }
   #sub-title h2 {
     font-family: 'Open Sans';
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     -webkit-box-shadow: 0px 1px 2px black;
             box-shadow: 0px 1px 2px black;
   }
   #sub-title h2:hover {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     -webkit-transition: font-size 0.25s ease-in;
     transition: font-size 0.25s ease-in;
   }
   #sub-title p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Open Sans';
     text-align: center;
     line-height: 1.5em;
     border: 1px solid black;
-    padding: 1.5em;
-    -webkit-box-shadow: 1px 1px 2px grey;
-            box-shadow: 1px 1px 2px grey;
+    padding: 2em;
+    -webkit-box-shadow: 1px 1px 2px #afacac;
+            box-shadow: 1px 1px 2px #afacac;
+    line-height: 6vh;
   }
   #images-container {
     width: 90%;
@@ -1052,7 +1056,7 @@ body {
     transition: box-shadow 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
   }
   #images-container .card-container:hover p {
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-family: 'Open Sans';
     text-align: center;
     line-height: 1.5em;
@@ -1076,16 +1080,16 @@ body {
     opacity: 0.8;
   }
   #rank {
-    width: 40%;
+    width: 50%;
     min-height: 20vh;
     margin: 2em;
   }
   #rank p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Open Sans';
     text-align: center;
     line-height: 1.5em;
-    padding: 0;
+    padding: 1em;
   }
   #sub-content-1 {
     -ms-grid-columns: 1fr 1fr;
@@ -1104,21 +1108,19 @@ body {
     position: relative;
   }
   #sub-content-1 #review #review-container {
-    height: 20vh;
+    height: 30vh;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     row-gap: 0;
     margin-top: 0;
-    position: absolute;
-    top: -9vh;
   }
   #sub-content-1 #review #yelp-review {
     position: absolute;
-    top: 30vh;
+    top: 36vh;
   }
   #order-tablet-desktop {
     width: 80%;
-    min-height: 30vh;
+    min-height: 50vh;
     display: -ms-grid;
     display: grid;
     row-gap: 2vh;
@@ -1129,7 +1131,7 @@ body {
   }
   #order-tablet-desktop a.button-1 {
     display: block;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Open Sans';
     font-weight: bold;
     font-stretch: normal;
@@ -1145,11 +1147,14 @@ body {
   }
   #order-tablet-desktop a.button-1:hover, #order-tablet-desktop a.button-1:active {
     color: #6f1d1bff;
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+  #order-tablet-desktop #order-info {
+    height: 50vh;
   }
   #order-tablet-desktop #order-info .order-info-item a {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Open Sans';
     font-weight: bold;
     font-stretch: normal;
@@ -1167,13 +1172,13 @@ body {
     -webkit-column-gap: 1vw;
             column-gap: 1vw;
   }
-  #footer #contact-info .info h2 {
+  #footer #contact-info .info h3 {
     font-family: 'Open Sans';
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
   }
   #footer #contact-info .info p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-family: 'Open Sans';
     text-align: center;
     line-height: 1.5em;
@@ -1183,7 +1188,7 @@ body {
     height: 8vh;
   }
   #footer #copyright p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-family: 'Open Sans';
     text-align: center;
     line-height: 1.5em;

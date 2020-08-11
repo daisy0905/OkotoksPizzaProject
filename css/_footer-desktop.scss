@@ -8,12 +8,12 @@
         
         .info {
             
-            h2 {
-                @include h-font(1.5rem);
+            h3 {
+                @include h-font(1rem);
             }
                 
             p {
-                @include p-font(1.2rem);
+                @include p-font(0.9rem);
                 line-height: 1.8;
             }    
         }           
@@ -23,7 +23,7 @@
         height: 8vh;
 
         p {
-        @include p-font(1.2rem);
+        @include p-font(0.9rem);
         }
     } 
 }

@@ -313,8 +313,8 @@ body {
   padding-bottom: 100%;
   position: relative;
   height: 0;
-  -webkit-box-shadow: 2px 2px 2px grey;
-          box-shadow: 2px 2px 2px grey;
+  -webkit-box-shadow: 2px 2px 2px #afacac;
+          box-shadow: 2px 2px 2px #afacac;
 }
 
 #google-map #map-location iframe {

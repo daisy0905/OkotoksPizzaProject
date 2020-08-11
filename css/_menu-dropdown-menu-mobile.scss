@@ -5,7 +5,7 @@
     grid-template-columns: 4fr 3fr 2fr 3fr;
     justify-items: center;
     align-items: center;
-    background-color: lightgrey;
+    background-color: $color-4;
 
     h1 {
         @include h-font(1.5rem);

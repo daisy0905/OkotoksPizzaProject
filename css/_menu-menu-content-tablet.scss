@@ -7,24 +7,26 @@
     .item-name {
         height: 7vh;
     }
+}
 
-    .item-container-1 {
-        min-height: 30vh;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 1vw;
-    
-        .item-image {
-            
-            img {
-                padding: 0.8em 0 0.8em 0;
-            }
-        }
-             
-        .item-text {
-            min-height: 30vh;
+.item-container-1 {
+    min-height: 30vh;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1vw;
+
+    .item-image {
+        
+        img {
+            padding: 0.8em 0 0.8em 0;
+            border-radius: 4em;
         }
     }
-}
+         
+    .item-text {
+        min-height: 30vh;
+    }
+} 
+
 
 .item-container-2 {
     min-height: 20vh;
@@ -52,7 +54,6 @@
 
     .item-container-3 {
         min-height: 50vh;
-        grid-template-columns: 1fr 1fr;
     
         .combo-image {
             height: 100%;
@@ -60,6 +61,9 @@
             justify-items: center;
             align-items: center;
 
+            img {
+                border-radius: 4em;
+            }
 
             .sides {
                 height: 100%;
@@ -86,7 +90,6 @@
                 padding: 1em;
             }
         }
-    }
-   
+    }  
 }
 

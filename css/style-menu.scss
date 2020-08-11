@@ -100,8 +100,8 @@ body {
 #go-to-top {
     position: fixed;
     bottom: 45vh;
-    left: 83vw;
-    width: 10%;
+    left: 90vw;
+    width: 5%;
     min-height: 20vh;
     display: grid;
     align-items: center;
@@ -165,4 +165,8 @@ body {
 
 @media only screen and (min-width: 600px) {
     @import '_style-menu-tablet';
+}
+
+@media only screen and (min-width: 1024px) {
+    @import 'style-menu-desktop';
 }

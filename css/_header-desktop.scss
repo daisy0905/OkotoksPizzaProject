@@ -10,7 +10,7 @@
     #desktop-menu {
 
         a {
-            @include a-font(1.5rem, $color-6);
+            @include a-font(1rem, $color-6);
         }
     }
 }

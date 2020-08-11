@@ -97,7 +97,7 @@ body {
 #go-to-top {
     position: fixed;
     bottom: 15vh;
-    right: 0;
+    right: 5vw;
     width: 5%;
     min-height: 20vh;
     display: grid;
@@ -123,76 +123,46 @@ body {
     }   
 }
 
-/*Top-content starts*/
-#top-content {
-    width: 90%;
-    min-height: 80vh;
-    display: grid;
-    row-gap: 2vh;
-    align-items: center;
-    justify-items: center;
-    border: 1px solid $color-6;
-
-    img {
-        display: block;
-        width: 90%;
-        height: 40vh;
-        object-fit: cover;
-        margin-top: 3vh;
-    }
-}
-
-#top-text {
-    width: 90%;
-    line-height: 4vh;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-
-    h2 {
-        @include h-font(1.5rem);
-        font-weight: bold;
-        color: $color-6;
-        text-align: center;
-        margin-bottom: 1em;
-        padding-bottom: 0.3em;
-        box-shadow: 0px 1px 1px $color-6;
-        width: 90%;
-    }
-
-    p {
-        @include p-font(1rem);
-        color: $color-6;
-        text-align: center;
-        width: 90%;
-        margin-bottom: 2vh;
-    }
-}
-/*Top-content ends*/
-
-/*Sub-content starts*/
-#sub-content {
+#story-container {
     width: 90%;
     min-height: 60vh;
     display: grid;
     row-gap: 2vh;
     align-items: center;
-    justify-items: center;
+    justify-items: center;  
+}
+
+.story-item {
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;  
     border: 1px solid $color-6;
 
-    img {
-        display: block;
+    .item-image {
         width: 90%;
-        height: 40vh;
-        object-fit: cover;
-        margin-top: 3vh;
-    }
-
-    #sub-text {
-        width: 80%;
+        min-height: 30vh;
         display: grid;
         align-items: center;
         justify-items: center;
+
+        img {
+            display: block;
+            width: 90%;
+            height: 40vh;
+            object-fit: cover;
+            margin-top: 3vh;
+        }
+    }
+
+    .item-text {
+        width: 90%;
+        line-height: 4vh;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        margin-top: 2vh;
     
         h2 {
             @include h-font(1.5rem);
@@ -204,26 +174,16 @@ body {
             box-shadow: 0px 1px 1px $color-6;
             width: 90%;
         }
-        
+    
         p {
             @include p-font(1rem);
             color: $color-6;
             text-align: center;
-            width: 100%;
-            margin-bottom: 2vh;
-        }
-
-        .chef-name {
-            @include p-font(1rem);
-            color: $color-6;
-            text-align: center;
-            width: 100%;
-            font-weight: bold;
+            width: 90%;
             margin-bottom: 2vh;
         }
     }
 }
-/*Sub-content ends*/
 
 /*Order-info starts*/
 #order-info-mobile {
@@ -295,4 +255,8 @@ body {
 
 @media only screen and (min-width: 600px) {
     @import '_style-about-tablet';
+}
+
+@media only screen and (min-width: 1024px) {
+    @import 'style-about-desktop';
 }
