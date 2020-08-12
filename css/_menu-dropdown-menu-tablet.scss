@@ -1,12 +1,12 @@
 #menu-header {
-    min-height: 25vh;
+    min-height: 22vh;
 }
 
 #hamberger-menu {
 
     #menu-header-content {
         top: 58vh;
-        height: 30vh;
+        height: 20vh;
 
         a {
             @include a-font(1.2rem, $color-1);

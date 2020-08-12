@@ -3,40 +3,74 @@
 /*Header ends*/
 
 #main-title {
-    min-height: 40vh;
-    background-position: center;
+    min-height: 45vh;
+    grid-template-columns: 20% 80%;
+    justify-items: center;
+    align-items: center;
 
-    h1 {
-        width: 45%;
-        left: 35%;
-        bottom: 60%;
-        line-height: 10vh;
-    }
+    div {
 
-    #discount {
-        bottom: 40%;
-        width: 33%;
-        left: 41%;
-        text-align: left;
-        padding-left: 1em;
-    }
-
-    #phone-tablet-desktop {
-        @include p-font(1.5rem);
-        color: $color-1;
-        display: block;
-        position: absolute;
-        left: 42%;
-        bottom: 15%;
-        text-shadow: 1px 1px 1px $color-6;
-    }
+        h1 {
+            padding-left: 0;
+            text-align: center;
+        }
+    
+        p {
+            width: 100%;
+            padding: 0.3em 0.6em 0.3em 0.6em;
+            text-align: center;
+        }
+    
+        a {
+            display: none;
+        }
+    
+        h2 {
+            @include h-font(1.5rem);
+            color: $color-1;
+            display: block;
+            text-align: center;
+            padding-left: 0;
+        }
+    } 
 }
 
-@import 'menu-dropdown-menu-desktop';
+#menu-header {
+    display: none;
+}
+
+#menu-desktop {
+    width: 90%;
+    min-height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap: 2vw;
+
+    a {
+        @include a-font(1rem, $color-1);
+        width: 100%;
+        padding: 0.6em;
+    
+        &:link, &:visited {
+            background-color: $color-2;
+        }
+    
+        &:hover {
+            background-color: $color-3;  
+        }
+    
+        &:active {
+            background-color: $color-4;
+        }
+    }
+
+}
 
 #go-to-top {
-    bottom: 25vh;
-    left: 94vw;
+    bottom: 10vh;
+    left: 90vw;
     
     a {
         @include a-font(1rem, $color-1);  

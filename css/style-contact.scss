@@ -38,39 +38,39 @@ body {
     background-size: cover;
     background-position: top;
     opacity: 0.9;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    display: grid;
+    grid-template-columns: 0% 100%;
+    align-items: center;
     justify-content: center;
-    position: relative;
 
-    h1 {
-        @include h-font(2.5rem);
-        color: $color-1;
-        font-weight: bold;
-        line-height: 8vh;
-        width: 70%;
-        position: absolute;
-        bottom: 50%;
-        left: 15%;
-        text-shadow: 0 2px 2px $color-6;
-    }
+    div {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2vh;
 
-    P {
-        @include p-font(1.2rem);
-        color: $color-1;
-        font-weight: normal;
-        line-height: 4vh;
-        position: absolute;
-        bottom: 15%;
-        width: 80%;
-        left: 10%;
-        padding: 0.3em;
-        text-shadow: 0 2px 2px $color-6;
-        background-color: $color-5;
-        opacity: 0.9;
-        padding: 0.8em;
-        box-shadow: 1px 1px 1px $color-1;
+        h1 {
+            @include h-font(2.5rem);
+            color: $color-1;
+            font-weight: bold;
+            text-shadow: 0 2px 2px $color-6;
+            margin-top: 6vh;
+            margin-bottom: 4vh;
+        }
+    
+        P {
+            @include p-font(1rem);
+            color: $color-1;
+            font-weight: normal;
+            line-height: 4vh;
+            width: 90%;
+            text-shadow: 0 2px 2px $color-6;
+            background-color: $color-5;
+            opacity: 0.9;
+            padding: 0.8em;
+            box-shadow: 1px 1px 1px $color-1;
+            margin: 0 0 0 5vw;
+        }
     }
 }
 

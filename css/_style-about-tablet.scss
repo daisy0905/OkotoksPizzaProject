@@ -3,25 +3,32 @@
 #main-title {
     min-height: 45vh;
     background: url(../images/about-backgroundimage-pizza-2.jpg);
+    grid-template-columns: 10% 90%;
 
-    h1 {
-        @include h-font(3rem);
-        width: 40%;
-        line-height: 7vh;
-        left: 20%;
-        bottom: 50%;
-        text-align: left;
-    }
+    div {
+        h1 {
+            @include h-font(3rem);
+            width: 100%;
+            line-height: 6vh;
+            text-align: left;
+            margin-top: 0;
+        }
+    
+        a {
+            display: none;
+        }
+    
+        p {
+            @include p-font(1.5rem);
+            text-align: left;
+        }
 
-    P {
-        line-height: 4vh;
-        left: 20%;
-        bottom: 30%;
-        width: 40%;
-    }
-
-    a {
-        display: none;
+        h2 {
+            @include h-font(1.5rem);
+            color: $color-2;
+            display: block;
+            text-align: left;
+        }
     }
 }
 

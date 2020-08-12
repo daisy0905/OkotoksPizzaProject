@@ -156,55 +156,57 @@ body {
   background-size: cover;
   background-position: top;
   opacity: 0.9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0% 100%;
+      grid-template-columns: 0% 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
 
-#main-title h1 {
+#main-title div {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 2vh;
+}
+
+#main-title div h1 {
   font-family: 'Open Sans';
   font-size: 2.5rem;
   text-align: center;
   color: white;
   font-weight: bold;
-  line-height: 8vh;
-  width: 70%;
-  position: absolute;
-  bottom: 50%;
-  left: 15%;
   text-shadow: 0 2px 2px black;
+  margin-top: 6vh;
+  margin-bottom: 4vh;
 }
 
-#main-title P {
-  font-size: 1.2rem;
+#main-title div P {
+  font-size: 1rem;
   font-family: 'Open Sans';
   text-align: center;
   line-height: 1.5em;
   color: white;
   font-weight: normal;
   line-height: 4vh;
-  position: absolute;
-  bottom: 15%;
-  width: 80%;
-  left: 10%;
-  padding: 0.3em;
+  width: 90%;
   text-shadow: 0 2px 2px black;
   background-color: #6f1d1bff;
   opacity: 0.9;
   padding: 0.8em;
   -webkit-box-shadow: 1px 1px 1px white;
           box-shadow: 1px 1px 1px white;
+  margin: 0 0 0 5vw;
 }
 
 #contact {
@@ -454,15 +456,28 @@ body {
             justify-content: center;
     position: relative;
   }
-  #main-title h1 {
-    bottom: 40%;
-    left: 15%;
-    text-shadow: 0 2px 2px black;
+  #main-title div {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 2vh;
   }
-  #main-title P {
-    bottom: 15%;
-    width: 70%;
-    left: 15%;
+  #main-title div h1 {
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+  }
+  #main-title div P {
+    font-size: 1.2rem;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 1.5em;
+    width: 80%;
+    margin: 0 0 0 10vw;
   }
   #contact {
     grid-row-gap: 0;
@@ -549,20 +564,28 @@ body {
     min-height: 60vh;
     background-position: center;
   }
-  #main-title h1 {
-    bottom: 40%;
-    left: 15%;
-    text-shadow: 0 2px 2px black;
+  #main-title div {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 2vh;
   }
-  #main-title P {
-    font-size: 1.5rem;
+  #main-title div h1 {
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+  }
+  #main-title div P {
+    font-size: 1.2rem;
     font-family: 'Open Sans';
     text-align: center;
     line-height: 1.5em;
-    bottom: 15%;
-    width: 50%;
-    left: 25%;
-    padding: 0.8em;
+    width: 100%;
+    margin: 0 0 0 0;
   }
   #contact {
     width: 80%;

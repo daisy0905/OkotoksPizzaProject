@@ -5,22 +5,26 @@
 #main-title {
     min-height: 40vh;
 
-    h1 {
-        @include h-font(2.5rem);
-        width: 45%;
-        left: 35%;
-        bottom: 30%;
-        line-height: 10vh;
-    }
-
-    p {
-        @include p-font(1.5rem);
-        color: $color-1;
-        display: block;
-        position: absolute;
-        left: 47%;
-        bottom: 10%;
-        text-shadow: 1px 1px 1px $color-6;
+    div {
+        h1 {
+            @include h-font(2.5rem);
+            width: 100%;
+            line-height: 6vh;
+            text-align: left;
+            margin-bottom: 3vh;
+        }
+    
+        a {
+            display: none;
+        }
+    
+        p {
+            display: block;
+            @include p-font(1.5rem);
+            color: $color-1;
+            text-shadow: 2px 2px 2px $color-6;
+            text-align: left;
+        }
     }
 }
 
@@ -61,6 +65,7 @@
         padding: 2em;
         box-shadow: 1px 1px 2px $color-4;
         line-height: 6vh;
+        padding: 1.5em 3.5em 1.5em 3.5em;
     }
 }
 
@@ -81,7 +86,7 @@
             transition: box-shadow 0.25s ease-in-out;
         
             p {
-                @include p-font(1.5rem);
+                @include p-font(2rem);
                 text-shadow: 1px 1px 1px $color-6;
                 opacity: 1;
                 top: 20vh;

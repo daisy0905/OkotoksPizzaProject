@@ -3,27 +3,26 @@
 #main-title {
     min-height: 45vh;
 
-    h1 {
-        @include h-font(3rem);
-        width: 40%;
-        line-height: 7vh;
-        left: 50%;
-        bottom: 35%;
-        text-align: left;
-    }
-
-    a {
-        display: none;
-    }
-
-    p {
-        @include p-font(1.5rem);
-        color: $color-1;
-        display: block;
-        position: absolute;
-        left: 50%;
-        bottom: 20%;
-        text-shadow: 1px 1px 1px $color-6;
+    div {
+        h1 {
+            @include h-font(3rem);
+            width: 100%;
+            line-height: 6vh;
+            text-align: left;
+            margin-bottom: 3vh;
+        }
+    
+        a {
+            display: none;
+        }
+    
+        p {
+            display: block;
+            @include p-font(1.5rem);
+            color: $color-1;
+            text-shadow: 2px 2px 2px $color-6;
+            text-align: left;
+        }
     }
 }
 

@@ -156,23 +156,23 @@ body {
   background-size: cover;
   background-position: top;
   opacity: 0.9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: top;
-      -ms-flex-pack: top;
-          justify-content: top;
-  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  justify-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#main-title h1 {
+#main-title div {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 2vh;
+}
+
+#main-title div h1 {
   font-family: 'Open Sans';
   font-size: 2.5rem;
   text-align: center;
@@ -181,29 +181,28 @@ body {
   text-align: left;
   line-height: 8vh;
   width: 50%;
-  position: absolute;
-  left: 15%;
-  bottom: 50%;
   text-shadow: 0 2px 2px #99582aff;
+  margin-top: 10vh;
 }
 
-#main-title P {
-  font-size: 1.5rem;
+#main-title div p {
+  display: block;
+  font-size: 1.2rem;
   font-family: 'Open Sans';
   text-align: center;
   line-height: 1.5em;
   color: white;
-  font-weight: normal;
-  line-height: 5vh;
-  position: absolute;
-  left: 15%;
-  bottom: 25%;
+  text-shadow: 2px 2px 2px black;
   text-align: left;
-  width: 70%;
-  text-shadow: 0 2px 2px #99582aff;
+  line-height: 2em;
+  width: 80%;
 }
 
-#main-title a {
+#main-title div h2 {
+  display: none;
+}
+
+#main-title div a {
   display: block;
   font-size: 1rem;
   font-family: 'Open Sans';
@@ -215,18 +214,15 @@ body {
   width: 40vw;
   border: 0.1em solid white;
   text-align: center;
-  position: absolute;
-  left: 15%;
-  bottom: 15%;
 }
 
-#main-title a:link, #main-title a:visited {
+#main-title div a:link, #main-title div a:visited {
   color: white;
   background-color: #99582aff;
   padding: 0.3em;
 }
 
-#main-title a:hover, #main-title a:active {
+#main-title div a:hover, #main-title div a:active {
   color: #99582aff;
   background-color: white;
   padding: 0.4em;
@@ -613,25 +609,35 @@ body {
   #main-title {
     min-height: 45vh;
     background: url(../images/about-backgroundimage-pizza-2.jpg);
+    -ms-grid-columns: 10% 90%;
+        grid-template-columns: 10% 90%;
   }
-  #main-title h1 {
+  #main-title div h1 {
     font-family: 'Open Sans';
     font-size: 3rem;
     text-align: center;
-    width: 40%;
-    line-height: 7vh;
-    left: 20%;
-    bottom: 50%;
+    width: 100%;
+    line-height: 6vh;
+    text-align: left;
+    margin-top: 0;
+  }
+  #main-title div a {
+    display: none;
+  }
+  #main-title div p {
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 1.5em;
     text-align: left;
   }
-  #main-title P {
-    line-height: 4vh;
-    left: 20%;
-    bottom: 30%;
-    width: 40%;
-  }
-  #main-title a {
-    display: none;
+  #main-title div h2 {
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    text-align: center;
+    color: #bb9457ff;
+    display: block;
+    text-align: left;
   }
   #go-to-top {
     right: 0;
@@ -805,26 +811,32 @@ body {
   #main-title {
     min-height: 40vh;
     background: url(../images/about-backgroundimage-pizza-3.jpg);
-    background-position: center;
+    background-position: right;
   }
-  #main-title h1 {
+  #main-title div h1 {
     font-family: 'Open Sans';
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
-    text-align: center;
-    margin-bottom: 2vh;
+    width: 100%;
+    line-height: 6vh;
+    text-align: left;
+    margin-top: 0;
   }
-  #main-title P {
+  #main-title div p {
     font-size: 1.5rem;
     font-family: 'Open Sans';
     text-align: center;
     line-height: 1.5em;
-    width: 80%;
-    left: 0;
-    text-align: center;
+    text-align: left;
+    width: 100%;
   }
-  #main-title a {
-    display: none;
+  #main-title div h2 {
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    text-align: center;
+    color: #bb9457ff;
+    display: block;
+    text-align: left;
   }
   #go-to-top {
     bottom: 14vh;

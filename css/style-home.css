@@ -153,37 +153,35 @@ body {
   background-size: cover;
   background-position: left;
   opacity: 0.9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
-#main-title h1 {
+#main-title div h1 {
   font-family: 'Open Sans';
   font-size: 2.5rem;
   text-align: center;
   color: white;
   font-weight: normal;
-  width: 50%;
+  width: 100%;
   text-align: left;
   line-height: 8vh;
-  position: absolute;
-  left: 40%;
   text-shadow: 0 2px 2px black;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  padding-right: 1em;
 }
 
-#main-title a {
+#main-title div a {
   display: block;
   font-size: 1rem;
   font-family: 'Open Sans';
@@ -192,28 +190,27 @@ body {
   text-decoration: none;
   text-align: center;
   color: white;
-  width: 40vw;
+  width: 80%;
   border: 0.1em solid white;
   text-align: center;
-  position: absolute;
-  left: 40%;
-  bottom: 15%;
   border-radius: 1em;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  margin-top: 4vh;
 }
 
-#main-title a:link, #main-title a:visited {
+#main-title div a:link, #main-title div a:visited {
   color: white;
   background-color: #99582aff;
-  padding: 0.3em;
 }
 
-#main-title a:hover, #main-title a:active {
+#main-title div a:hover, #main-title div a:active {
   color: #99582aff;
   background-color: white;
-  padding: 0.4em;
 }
 
-#main-title p {
+#main-title div p {
   display: none;
 }
 
@@ -727,30 +724,27 @@ body {
   #main-title {
     min-height: 45vh;
   }
-  #main-title h1 {
+  #main-title div h1 {
     font-family: 'Open Sans';
     font-size: 3rem;
     text-align: center;
-    width: 40%;
-    line-height: 7vh;
-    left: 50%;
-    bottom: 35%;
+    width: 100%;
+    line-height: 6vh;
     text-align: left;
+    margin-bottom: 3vh;
   }
-  #main-title a {
+  #main-title div a {
     display: none;
   }
-  #main-title p {
+  #main-title div p {
+    display: block;
     font-size: 1.5rem;
     font-family: 'Open Sans';
     text-align: center;
     line-height: 1.5em;
     color: white;
-    display: block;
-    position: absolute;
-    left: 50%;
-    bottom: 20%;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 2px 2px black;
+    text-align: left;
   }
   #go-to-top {
     bottom: 35vh;
@@ -989,26 +983,27 @@ body {
   #main-title {
     min-height: 40vh;
   }
-  #main-title h1 {
+  #main-title div h1 {
     font-family: 'Open Sans';
     font-size: 2.5rem;
     text-align: center;
-    width: 45%;
-    left: 35%;
-    bottom: 30%;
-    line-height: 10vh;
+    width: 100%;
+    line-height: 6vh;
+    text-align: left;
+    margin-bottom: 3vh;
   }
-  #main-title p {
+  #main-title div a {
+    display: none;
+  }
+  #main-title div p {
+    display: block;
     font-size: 1.5rem;
     font-family: 'Open Sans';
     text-align: center;
     line-height: 1.5em;
     color: white;
-    display: block;
-    position: absolute;
-    left: 47%;
-    bottom: 10%;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 2px 2px black;
+    text-align: left;
   }
   #go-to-top {
     bottom: 25vh;
@@ -1060,6 +1055,7 @@ body {
     -webkit-box-shadow: 1px 1px 2px #afacac;
             box-shadow: 1px 1px 2px #afacac;
     line-height: 6vh;
+    padding: 1.5em 3.5em 1.5em 3.5em;
   }
   #images-container {
     width: 90%;
@@ -1084,7 +1080,7 @@ body {
     transition: box-shadow 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
   }
   #images-container .card-container:hover p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Open Sans';
     text-align: center;
     line-height: 1.5em;

@@ -5,48 +5,37 @@
 /*Content starts*/
 #main-title {
     min-height: 45vh;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: 35% 65%;
 
-   h1 {
-        @include h-font(2.5rem);
-        color: $color-1;
-        font-weight: bold;
-        line-height: 8vh;
-        width: 70%;
-        position: absolute;
-        bottom: 55%;
-        text-shadow: 0 2px 2px $color-6;
-        left: 20%;
-    }
+    div {
 
-    #discount {
-        line-height: 4vh;
-        bottom: 40%;
-        width: 50%;
-        left: 30%;
-    }
-
-    a {
-        display: none;
-    }
-
-    #phone-tablet-desktop {
-        @include p-font(2rem);
-        color: $color-1;
-        display: block;
-        position: absolute;
-        left: 30%;
-        bottom: 20%;
-        text-shadow: 1px 1px 1px $color-6;
-    }
+        h1 {
+            padding-left: 1em;
+        }
+    
+        p {
+            padding: 0.3em 0.3em 0.3em 2em;
+        }
+    
+        a {
+            display: none;
+        }
+    
+        h2 {
+            @include h-font(1.5rem);
+            color: $color-1;
+            display: block;
+            text-align: left;
+            padding-left: 2em;
+        }
+    } 
 }
 
 @import 'menu-dropdown-menu-tablet';
 
 #go-to-top {
     bottom: 40vh;
-    left: 90vw;
+    left: 95vw;
     width: 5%;
 }
 
