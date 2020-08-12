@@ -186,7 +186,7 @@ body {
   text-shadow: 0 2px 2px black;
 }
 
-#main-title P {
+#main-title #discount {
   font-size: 1.5rem;
   font-family: 'Open Sans';
   text-align: center;
@@ -232,6 +232,10 @@ body {
   background-color: white;
   padding: 0.4em;
   font-size: 1.2rem;
+}
+
+#main-title #phone-tablet-desktop {
+  display: none;
 }
 
 #menu-header {
@@ -935,7 +939,7 @@ body {
     text-shadow: 0 2px 2px black;
     left: 20%;
   }
-  #main-title P {
+  #main-title #discount {
     line-height: 4vh;
     bottom: 40%;
     width: 50%;
@@ -944,12 +948,24 @@ body {
   #main-title a {
     display: none;
   }
+  #main-title #phone-tablet-desktop {
+    font-size: 2rem;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 1.5em;
+    color: white;
+    display: block;
+    position: absolute;
+    left: 30%;
+    bottom: 20%;
+    text-shadow: 1px 1px 1px black;
+  }
   #menu-header {
-    min-height: 20vh;
+    min-height: 25vh;
   }
   #hamberger-menu #menu-header-content {
-    top: 60vh;
-    height: 20vh;
+    top: 58vh;
+    height: 30vh;
   }
   #hamberger-menu #menu-header-content a {
     display: block;
@@ -1104,15 +1120,27 @@ body {
   #main-title h1 {
     width: 45%;
     left: 35%;
-    bottom: 40%;
+    bottom: 60%;
     line-height: 10vh;
   }
-  #main-title P {
-    bottom: 20%;
+  #main-title #discount {
+    bottom: 40%;
     width: 33%;
     left: 41%;
     text-align: left;
     padding-left: 1em;
+  }
+  #main-title #phone-tablet-desktop {
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 1.5em;
+    color: white;
+    display: block;
+    position: absolute;
+    left: 42%;
+    bottom: 15%;
+    text-shadow: 1px 1px 1px black;
   }
   #menu-header {
     min-height: 40vh;

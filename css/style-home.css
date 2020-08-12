@@ -213,6 +213,10 @@ body {
   padding: 0.4em;
 }
 
+#main-title p {
+  display: none;
+}
+
 #go-to-top {
   position: fixed;
   bottom: 45vh;
@@ -736,6 +740,18 @@ body {
   #main-title a {
     display: none;
   }
+  #main-title p {
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 1.5em;
+    color: white;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    text-shadow: 1px 1px 1px black;
+  }
   #go-to-top {
     bottom: 35vh;
     right: 0;
@@ -981,6 +997,18 @@ body {
     left: 35%;
     bottom: 30%;
     line-height: 10vh;
+  }
+  #main-title p {
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 1.5em;
+    color: white;
+    display: block;
+    position: absolute;
+    left: 47%;
+    bottom: 10%;
+    text-shadow: 1px 1px 1px black;
   }
   #go-to-top {
     bottom: 25vh;

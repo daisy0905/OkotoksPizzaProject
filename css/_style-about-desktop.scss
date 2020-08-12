@@ -3,6 +3,7 @@
 #main-title {
     min-height: 40vh;
     background: url(../images/about-backgroundimage-pizza-3.jpg);
+    background-position: center;
 
     h1 {
         @include h-font(2.5rem);
@@ -46,6 +47,7 @@
     .item-image {
         height: 40vh;
         align-items: top;
+        margin-top: 2vh;
     }
 
     .item-text {

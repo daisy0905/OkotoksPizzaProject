@@ -19,7 +19,7 @@
 }
 
 
-#content {
+#contact {
     grid-row-gap: 0;
 }
 
@@ -53,5 +53,26 @@
     p {
         @include p-font(1rem);
         width: 100%;
+    }
+}
+
+#location {
+    row-gap: 3vh;
+
+    #map-location {
+        width: 70%;
+        height: auto;
+        padding-bottom: 70%;
+        margin-top: 3vh;
+    }
+
+    #store-picture {
+        width: 70%;
+        min-height: 50vh;
+        row-gap: 1vh;
+
+        img {
+            width: 100%;
+        }
     }
 }

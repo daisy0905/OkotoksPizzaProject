@@ -297,7 +297,7 @@ body {
 }
 
 .story-item .item-image {
-  width: 90%;
+  width: 100%;
   min-height: 30vh;
   display: -ms-grid;
   display: grid;
@@ -655,6 +655,7 @@ body {
     border-spacing: 10px;
   }
   .story-item .item-image {
+    width: 90%;
     height: 32vh;
     -webkit-box-align: top;
         -ms-flex-align: top;
@@ -804,6 +805,7 @@ body {
   #main-title {
     min-height: 40vh;
     background: url(../images/about-backgroundimage-pizza-3.jpg);
+    background-position: center;
   }
   #main-title h1 {
     font-family: 'Open Sans';
@@ -858,6 +860,7 @@ body {
     -webkit-box-align: top;
         -ms-flex-align: top;
             align-items: top;
+    margin-top: 2vh;
   }
   .story-item .item-text {
     min-height: 55vh;

@@ -56,7 +56,7 @@ body {
         text-shadow: 0 2px 2px $color-6;
     }
 
-    P {
+    #discount {
         @include p-font(1.5rem);
         color: $color-1;
         font-weight: normal;
@@ -92,6 +92,10 @@ body {
             padding: 0.4em;
             font-size: 1.2rem;
         }
+    }
+
+    #phone-tablet-desktop {
+        display: none;
     }
 }
 

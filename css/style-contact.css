@@ -207,7 +207,7 @@ body {
           box-shadow: 1px 1px 1px white;
 }
 
-#content {
+#contact {
   width: 100%;
   min-height: 100vh;
   display: -ms-grid;
@@ -294,7 +294,7 @@ body {
   display: none;
 }
 
-#google-map {
+#location {
   width: 90%;
   min-height: 50vh;
   display: -ms-grid;
@@ -306,7 +306,7 @@ body {
           align-items: center;
 }
 
-#google-map #map-location {
+#location #map-location {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -317,12 +317,44 @@ body {
           box-shadow: 2px 2px 2px #afacac;
 }
 
-#google-map #map-location iframe {
+#location #map-location iframe {
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
+}
+
+#location #store-picture {
+  width: 100%;
+  min-height: 40vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 2vh;
+}
+
+#location #store-picture h2 {
+  width: 100%;
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 1px #afacac;
+          box-shadow: 1px 1px 1px #afacac;
+}
+
+#location #store-picture img {
+  width: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 1px 1px 1px #afacac;
+          box-shadow: 1px 1px 1px #afacac;
 }
 
 /*Content ends*/
@@ -432,7 +464,7 @@ body {
     width: 70%;
     left: 15%;
   }
-  #content {
+  #contact {
     grid-row-gap: 0;
   }
   #contact-mobile {
@@ -474,6 +506,127 @@ body {
     text-align: center;
     line-height: 1.5em;
     width: 100%;
+  }
+  #location {
+    row-gap: 3vh;
+  }
+  #location #map-location {
+    width: 70%;
+    height: auto;
+    padding-bottom: 70%;
+    margin-top: 3vh;
+  }
+  #location #store-picture {
+    width: 70%;
+    min-height: 50vh;
+    row-gap: 1vh;
+  }
+  #location #store-picture img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #desktop-header {
+    -ms-grid-columns: 1fr 3fr 3fr 0.5fr;
+        grid-template-columns: 1fr 3fr 3fr 0.5fr;
+  }
+  #desktop-header #desktop-header-logo {
+    width: 50%;
+    margin: 0.6em;
+  }
+  #desktop-header #desktop-menu a {
+    display: block;
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-stretch: normal;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+  }
+  #main-title {
+    min-height: 60vh;
+    background-position: center;
+  }
+  #main-title h1 {
+    bottom: 40%;
+    left: 15%;
+    text-shadow: 0 2px 2px black;
+  }
+  #main-title P {
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 1.5em;
+    bottom: 15%;
+    width: 50%;
+    left: 25%;
+    padding: 0.8em;
+  }
+  #contact {
+    width: 80%;
+    min-height: 40vh;
+  }
+  #contact-tablet-desktop {
+    width: 100%;
+    min-height: 20vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5% 30% 25% 35% 5%;
+        grid-template-columns: 5% 30% 25% 35% 5%;
+    row-gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    background-color: #afacac;
+    margin: 3vh 0 3vh 0;
+  }
+  #location {
+    width: 100%;
+    min-height: 30vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #location #map-location {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+    -webkit-box-shadow: 0px 0px 0px #afacac;
+            box-shadow: 0px 0px 0px #afacac;
+  }
+  #location #map-location iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+    top: 0;
+  }
+  #location #store-picture {
+    width: 80%;
+    min-height: 50vh;
+    row-gap: 0;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #location #store-picture img {
+    width: 100%;
+    height: 30vh;
   }
 }
 /*# sourceMappingURL=style-contact.css.map */
