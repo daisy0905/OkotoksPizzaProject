@@ -40,18 +40,18 @@
 }
 
 #menu-desktop {
-    width: 90%;
+    width: 95%;
     min-height: 10vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
     align-items: center;
-    column-gap: 2vw;
+    column-gap: 1vw;
 
     a {
         @include a-font(1rem, $color-1);
         width: 100%;
-        padding: 0.6em;
+        padding: 0.4em;
     
         &:link, &:visited {
             background-color: $color-2;
@@ -71,6 +71,7 @@
 #go-to-top {
     bottom: 10vh;
     left: 90vw;
+    width: 5%;
     
     a {
         @include a-font(1rem, $color-1);  

@@ -1,5 +1,6 @@
 /*Color palette*/
 * {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -962,7 +963,7 @@ body {
   #go-to-top {
     bottom: 40vh;
     left: 95vw;
-    width: 5%;
+    width: 3%;
   }
   .menu-content {
     min-height: 30vh;
@@ -1129,7 +1130,7 @@ body {
     display: none;
   }
   #menu-desktop {
-    width: 90%;
+    width: 95%;
     min-height: 10vh;
     display: -ms-grid;
     display: grid;
@@ -1139,8 +1140,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-column-gap: 2vw;
-            column-gap: 2vw;
+    -webkit-column-gap: 1vw;
+            column-gap: 1vw;
   }
   #menu-desktop a {
     display: block;
@@ -1152,7 +1153,7 @@ body {
     text-align: center;
     color: white;
     width: 100%;
-    padding: 0.6em;
+    padding: 0.4em;
   }
   #menu-desktop a:link, #menu-desktop a:visited {
     background-color: #bb9457ff;
@@ -1166,6 +1167,7 @@ body {
   #go-to-top {
     bottom: 10vh;
     left: 90vw;
+    width: 5%;
   }
   #go-to-top a {
     display: block;
@@ -1463,7 +1465,7 @@ body {
   }
   .item-package-2 .item-container-3 .combo-text {
     width: 65%;
-    height: 35vh;
+    min-height: 50vh;
     margin: 0;
     display: -ms-grid;
     display: grid;
