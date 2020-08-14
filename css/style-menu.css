@@ -1021,12 +1021,14 @@ body {
             align-items: center;
   }
   .menu-items-2 .item-container-3 .combo-image img {
+    width: 50%;
     border-radius: 4em;
   }
   .menu-items-2 .item-container-3 .combo-image .sides {
     height: 100%;
   }
   .menu-items-2 .item-container-3 .combo-image .sides img {
+    width: 100%;
     margin-top: 0;
     margin-bottom: 2vh;
   }
