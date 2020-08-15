@@ -196,10 +196,10 @@ body {
 
 /*Footer starts*/
 #footer {
-    @include p-font(1rem);
+    @include p-font(0.8rem);
     background-color: $color-5;
     width: 100%;
-    min-height: 8vh;
+    min-height: 5vh;
     color: $color-1;
     display: grid;
     justify-content: center;
